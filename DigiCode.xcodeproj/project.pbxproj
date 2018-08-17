@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19D4DB592127314900B24E6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DB582127314900B24E6E /* AppDelegate.swift */; };
+		19D4DB5B2127314900B24E6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DB5A2127314900B24E6E /* ViewController.swift */; };
+		19D4DB5E2127314900B24E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DB5C2127314900B24E6E /* Main.storyboard */; };
+		19D4DB602127314A00B24E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DB5F2127314A00B24E6E /* Assets.xcassets */; };
+		19D4DB632127314A00B24E6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DB612127314A00B24E6E /* LaunchScreen.storyboard */; };
+		19D4DB712127316A00B24E6E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DB702127316A00B24E6E /* KeyboardViewController.swift */; };
+		19D4DB752127316A00B24E6E /* DigiKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 19D4DB6E2127316A00B24E6E /* DigiKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19D4DB732127316A00B24E6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D4DB4D2127314900B24E6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19D4DB6D2127316A00B24E6E;
+			remoteInfo = DigiKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19D4DB792127316A00B24E6E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				19D4DB752127316A00B24E6E /* DigiKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19D4DB552127314900B24E6E /* DigiCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D4DB582127314900B24E6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19D4DB5A2127314900B24E6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19D4DB5D2127314900B24E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19D4DB5F2127314A00B24E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19D4DB622127314A00B24E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19D4DB642127314A00B24E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D4DB6E2127316A00B24E6E /* DigiKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DigiKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D4DB702127316A00B24E6E /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		19D4DB722127316A00B24E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19D4DB522127314900B24E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D4DB6B2127316A00B24E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19D4DB4C2127314900B24E6E = {
+			isa = PBXGroup;
+			children = (
+				19D4DB572127314900B24E6E /* DigiCode */,
+				19D4DB6F2127316A00B24E6E /* DigiKeyboard */,
+				19D4DB562127314900B24E6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19D4DB562127314900B24E6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19D4DB552127314900B24E6E /* DigiCode.app */,
+				19D4DB6E2127316A00B24E6E /* DigiKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19D4DB572127314900B24E6E /* DigiCode */ = {
+			isa = PBXGroup;
+			children = (
+				19D4DB582127314900B24E6E /* AppDelegate.swift */,
+				19D4DB5A2127314900B24E6E /* ViewController.swift */,
+				19D4DB5C2127314900B24E6E /* Main.storyboard */,
+				19D4DB5F2127314A00B24E6E /* Assets.xcassets */,
+				19D4DB612127314A00B24E6E /* LaunchScreen.storyboard */,
+				19D4DB642127314A00B24E6E /* Info.plist */,
+			);
+			path = DigiCode;
+			sourceTree = "<group>";
+		};
+		19D4DB6F2127316A00B24E6E /* DigiKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				19D4DB702127316A00B24E6E /* KeyboardViewController.swift */,
+				19D4DB722127316A00B24E6E /* Info.plist */,
+			);
+			path = DigiKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19D4DB542127314900B24E6E /* DigiCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D4DB672127314A00B24E6E /* Build configuration list for PBXNativeTarget "DigiCode" */;
+			buildPhases = (
+				19D4DB512127314900B24E6E /* Sources */,
+				19D4DB522127314900B24E6E /* Frameworks */,
+				19D4DB532127314900B24E6E /* Resources */,
+				19D4DB792127316A00B24E6E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19D4DB742127316A00B24E6E /* PBXTargetDependency */,
+			);
+			name = DigiCode;
+			productName = DigiCode;
+			productReference = 19D4DB552127314900B24E6E /* DigiCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19D4DB6D2127316A00B24E6E /* DigiKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D4DB762127316A00B24E6E /* Build configuration list for PBXNativeTarget "DigiKeyboard" */;
+			buildPhases = (
+				19D4DB6A2127316A00B24E6E /* Sources */,
+				19D4DB6B2127316A00B24E6E /* Frameworks */,
+				19D4DB6C2127316A00B24E6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigiKeyboard;
+			productName = DigiKeyboard;
+			productReference = 19D4DB6E2127316A00B24E6E /* DigiKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19D4DB4D2127314900B24E6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = presto;
+				TargetAttributes = {
+					19D4DB542127314900B24E6E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					19D4DB6D2127316A00B24E6E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 19D4DB502127314900B24E6E /* Build configuration list for PBXProject "DigiCode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19D4DB4C2127314900B24E6E;
+			productRefGroup = 19D4DB562127314900B24E6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19D4DB542127314900B24E6E /* DigiCode */,
+				19D4DB6D2127316A00B24E6E /* DigiKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19D4DB532127314900B24E6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D4DB632127314A00B24E6E /* LaunchScreen.storyboard in Resources */,
+				19D4DB602127314A00B24E6E /* Assets.xcassets in Resources */,
+				19D4DB5E2127314900B24E6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D4DB6C2127316A00B24E6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19D4DB512127314900B24E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D4DB5B2127314900B24E6E /* ViewController.swift in Sources */,
+				19D4DB592127314900B24E6E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D4DB6A2127316A00B24E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D4DB712127316A00B24E6E /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19D4DB742127316A00B24E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19D4DB6D2127316A00B24E6E /* DigiKeyboard */;
+			targetProxy = 19D4DB732127316A00B24E6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19D4DB5C2127314900B24E6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19D4DB5D2127314900B24E6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19D4DB612127314A00B24E6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19D4DB622127314A00B24E6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19D4DB652127314A00B24E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19D4DB662127314A00B24E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19D4DB682127314A00B24E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79MF628K3;
+				INFOPLIST_FILE = DigiCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = presto.DigiCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19D4DB692127314A00B24E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79MF628K3;
+				INFOPLIST_FILE = DigiCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = presto.DigiCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		19D4DB772127316A00B24E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79MF628K3;
+				INFOPLIST_FILE = DigiKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = presto.DigiCode.DigiKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19D4DB782127316A00B24E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79MF628K3;
+				INFOPLIST_FILE = DigiKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = presto.DigiCode.DigiKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19D4DB502127314900B24E6E /* Build configuration list for PBXProject "DigiCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D4DB652127314A00B24E6E /* Debug */,
+				19D4DB662127314A00B24E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D4DB672127314A00B24E6E /* Build configuration list for PBXNativeTarget "DigiCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D4DB682127314A00B24E6E /* Debug */,
+				19D4DB692127314A00B24E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D4DB762127316A00B24E6E /* Build configuration list for PBXNativeTarget "DigiKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D4DB772127316A00B24E6E /* Debug */,
+				19D4DB782127316A00B24E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19D4DB4D2127314900B24E6E /* Project object */;
+}
