@@ -10,16 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    var digiKeyboardView: DigiKeyboardView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        guard let keyboardView = UINib(nibName: "DigiKeyboardView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? DigiKeyboardView else { return }
+        keyboardView.delegate = self
+        self.textField.inputView = keyboardView
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.textField.becomeFirstResponder()
     }
+    
+}
 
-
+extension ViewController: DigiKeyboardViewDelegate {    
+    func didTouchUpCharacterButton(_ newCharacter: String) {
+        self.textField.insertText(newCharacter)
+    }
+    
+    func didTouchUpBackspaceButton() {
+        self.textField.deleteBackward()
+    }
+    
+    func characterBeforeCursor() -> String? {
+        return nil
+    }
 }
 

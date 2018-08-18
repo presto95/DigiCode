@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DigiKeyboardView" customModule="DigiCode" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EqG-48-0HU">
+                    <rect key="frame" x="4" y="16" width="367" height="36"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEu-GE-kyd" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="33" height="36"/>
+                            <state key="normal" title="q"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="uyz-Wd-Gpn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yv0-fN-Hfz" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="37" y="0.0" width="33" height="36"/>
+                            <state key="normal" title="w"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="YVo-Ek-oYL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B44-ze-RDM" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="74" y="0.0" width="33.5" height="36"/>
+                            <state key="normal" title="e"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="0rf-Ab-7Ni"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HP-Ze-8Xe" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="111.5" y="0.0" width="33" height="36"/>
+                            <state key="normal" title="r"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="Buq-PW-UlL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4R-tZ-iBs" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="148.5" y="0.0" width="33" height="36"/>
+                            <state key="normal" title="t"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="FWq-Ln-WCi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxl-LI-5tp" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="185.5" y="0.0" width="33" height="36"/>
+                            <state key="normal" title="y"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="ybQ-fx-k3S"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycm-p3-BZW" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="222.5" y="0.0" width="33" height="36"/>
+                            <state key="normal" title="u"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="RHW-kd-Aw7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMH-BL-V3y" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="259.5" y="0.0" width="33.5" height="36"/>
+                            <state key="normal" title="i"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="vNm-SH-Ioj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfn-02-H0t" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="297" y="0.0" width="33" height="36"/>
+                            <state key="normal" title="o"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="E3d-UO-25M"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCo-dH-J8l" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="334" y="0.0" width="33" height="36"/>
+                            <state key="normal" title="p"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="P5x-ct-ZEo"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="nG4-4U-9wC"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="O2t-Uu-H4E">
+                    <rect key="frame" x="16" y="68" width="343" height="36"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufE-RT-EOG" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="a"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="FKC-ad-bnM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzV-fL-opW" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="38.5" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="s"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="6uq-7j-ZF7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58r-61-uWc" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="77" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="d"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="fYF-hl-4fe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zg-r8-uKo" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="115.5" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="f"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="imk-xG-s2v"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGy-wo-s1S" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="154" y="0.0" width="35" height="36"/>
+                            <state key="normal" title="g"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="aQb-Zz-WWU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLw-uq-mA6" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="193" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="h"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="cok-H2-DuO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afm-qV-NMs" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="231.5" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="j"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="FHK-YP-grS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ga-ka-phu" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="270" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="k"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="NjY-2W-dW1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJR-cB-ujG" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="308.5" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="l"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="YSF-fV-A9h"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Fu7-89-Sdi"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DRQ-fY-IdB">
+                    <rect key="frame" x="54.5" y="120" width="266" height="36"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9A-o3-vR8" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="z"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="mTL-N0-aWf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMb-Xp-aho" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="38.5" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="x"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="yBB-T0-Q09"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CY-9v-xQ3" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="77" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="c"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="euQ-iq-cVL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkb-XJ-bec" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="115.5" y="0.0" width="35" height="36"/>
+                            <state key="normal" title="v"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="3sC-3I-NU2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyX-uQ-2uM" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="154.5" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="b"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="K3P-dd-fl2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGj-MZ-g1i" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="193" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="n"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="hFz-uD-ubD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpu-1H-Jaq" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="231.5" y="0.0" width="34.5" height="36"/>
+                            <state key="normal" title="m"/>
+                            <connections>
+                                <action selector="touchUpCharacterKeys:" destination="iN0-l3-epB" eventType="touchUpInside" id="MUp-Ye-DMK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="5sm-E9-aY0"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rB-WU-AMI" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                    <rect key="frame" x="4" y="160" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="B2v-e6-aua"/>
+                        <constraint firstAttribute="width" constant="30" id="FsL-Vq-Nly"/>
+                    </constraints>
+                    <state key="normal" image="globe"/>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFT-4q-cDn" customClass="DigiKeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                    <rect key="frame" x="335" y="120" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="IKs-M0-qpF"/>
+                        <constraint firstAttribute="width" constant="36" id="vun-k6-7dB"/>
+                    </constraints>
+                    <state key="normal" image="backspace"/>
+                    <connections>
+                        <action selector="touchUpBackspaceKey:" destination="iN0-l3-epB" eventType="touchUpInside" id="8IM-cE-8Eg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="4rB-WU-AMI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="3wZ-aN-rAn"/>
+                <constraint firstItem="O2t-Uu-H4E" firstAttribute="top" secondItem="EqG-48-0HU" secondAttribute="bottom" constant="16" id="6WL-sk-Mjk"/>
+                <constraint firstItem="DRQ-fY-IdB" firstAttribute="leading" secondItem="jzV-fL-opW" secondAttribute="leading" id="8jz-0y-5XY"/>
+                <constraint firstItem="EqG-48-0HU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="C8s-TM-9Mz"/>
+                <constraint firstItem="DRQ-fY-IdB" firstAttribute="trailing" secondItem="2ga-ka-phu" secondAttribute="trailing" id="NKg-gg-h0B"/>
+                <constraint firstItem="iFT-4q-cDn" firstAttribute="bottom" secondItem="DRQ-fY-IdB" secondAttribute="bottom" id="Xr4-lJ-N3s"/>
+                <constraint firstItem="EqG-48-0HU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="ZcY-Py-ZFo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="O2t-Uu-H4E" secondAttribute="trailing" constant="16" id="bZf-5a-qUn"/>
+                <constraint firstAttribute="trailing" secondItem="EqG-48-0HU" secondAttribute="trailing" constant="4" id="hAZ-Pz-Ywf"/>
+                <constraint firstItem="O2t-Uu-H4E" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="jqG-QH-DI6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iFT-4q-cDn" secondAttribute="trailing" constant="4" id="kIF-3v-7yW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4rB-WU-AMI" secondAttribute="bottom" constant="20" id="ltt-rI-n8t"/>
+                <constraint firstItem="DRQ-fY-IdB" firstAttribute="top" secondItem="O2t-Uu-H4E" secondAttribute="bottom" constant="16" id="qa0-Zg-doV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backspaceButton" destination="iFT-4q-cDn" id="c64-wp-HmM"/>
+                <outlet property="firstLineStackView" destination="EqG-48-0HU" id="yHc-kd-Qr6"/>
+                <outlet property="nextKeyboardButton" destination="4rB-WU-AMI" id="Us8-0r-hTF"/>
+                <outlet property="secondLineStackView" destination="O2t-Uu-H4E" id="4qU-E0-F9P"/>
+                <outlet property="thirdLineStackView" destination="DRQ-fY-IdB" id="gTd-fq-nn2"/>
+            </connections>
+            <point key="canvasLocation" x="239.5" y="12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backspace" width="100" height="100"/>
+        <image name="globe" width="100" height="100"/>
+    </resources>
+</document>

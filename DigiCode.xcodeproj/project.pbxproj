@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19BC30F82127BF4800ECBF35 /* DigiKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19BC30F72127BF4800ECBF35 /* DigiKeyboardView.xib */; };
+		19BC30FA2127BF5400ECBF35 /* DigiKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC30F92127BF5400ECBF35 /* DigiKeyboardView.swift */; };
+		19BC30FC2127BF6100ECBF35 /* DigiKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC30FB2127BF6100ECBF35 /* DigiKeyboardButton.swift */; };
+		19BC30FF2127BF6F00ECBF35 /* DigiColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC30FE2127BF6F00ECBF35 /* DigiColors.swift */; };
+		19BC31012127BF8000ECBF35 /* DigiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC31002127BF8000ECBF35 /* DigiData.swift */; };
 		19D4DB592127314900B24E6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DB582127314900B24E6E /* AppDelegate.swift */; };
 		19D4DB5B2127314900B24E6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DB5A2127314900B24E6E /* ViewController.swift */; };
 		19D4DB5E2127314900B24E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DB5C2127314900B24E6E /* Main.storyboard */; };
@@ -41,6 +46,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19BC30F72127BF4800ECBF35 /* DigiKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DigiKeyboardView.xib; sourceTree = "<group>"; };
+		19BC30F92127BF5400ECBF35 /* DigiKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiKeyboardView.swift; sourceTree = "<group>"; };
+		19BC30FB2127BF6100ECBF35 /* DigiKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiKeyboardButton.swift; sourceTree = "<group>"; };
+		19BC30FE2127BF6F00ECBF35 /* DigiColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiColors.swift; sourceTree = "<group>"; };
+		19BC31002127BF8000ECBF35 /* DigiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiData.swift; sourceTree = "<group>"; };
 		19D4DB552127314900B24E6E /* DigiCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D4DB582127314900B24E6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19D4DB5A2127314900B24E6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +81,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19BC30F62127BF2900ECBF35 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				19BC30FB2127BF6100ECBF35 /* DigiKeyboardButton.swift */,
+				19BC30F72127BF4800ECBF35 /* DigiKeyboardView.xib */,
+				19BC30F92127BF5400ECBF35 /* DigiKeyboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		19BC30FD2127BF6400ECBF35 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				19BC30FE2127BF6F00ECBF35 /* DigiColors.swift */,
+				19BC31002127BF8000ECBF35 /* DigiData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		19D4DB4C2127314900B24E6E = {
 			isa = PBXGroup;
 			children = (
@@ -92,12 +121,14 @@
 		19D4DB572127314900B24E6E /* DigiCode */ = {
 			isa = PBXGroup;
 			children = (
-				19D4DB582127314900B24E6E /* AppDelegate.swift */,
-				19D4DB5A2127314900B24E6E /* ViewController.swift */,
-				19D4DB5C2127314900B24E6E /* Main.storyboard */,
-				19D4DB5F2127314A00B24E6E /* Assets.xcassets */,
-				19D4DB612127314A00B24E6E /* LaunchScreen.storyboard */,
 				19D4DB642127314A00B24E6E /* Info.plist */,
+				19D4DB612127314A00B24E6E /* LaunchScreen.storyboard */,
+				19D4DB582127314900B24E6E /* AppDelegate.swift */,
+				19D4DB5C2127314900B24E6E /* Main.storyboard */,
+				19D4DB5A2127314900B24E6E /* ViewController.swift */,
+				19BC30FD2127BF6400ECBF35 /* Data */,
+				19BC30F62127BF2900ECBF35 /* Views */,
+				19D4DB5F2127314A00B24E6E /* Assets.xcassets */,
 			);
 			path = DigiCode;
 			sourceTree = "<group>";
@@ -194,6 +225,7 @@
 			files = (
 				19D4DB632127314A00B24E6E /* LaunchScreen.storyboard in Resources */,
 				19D4DB602127314A00B24E6E /* Assets.xcassets in Resources */,
+				19BC30F82127BF4800ECBF35 /* DigiKeyboardView.xib in Resources */,
 				19D4DB5E2127314900B24E6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BC31012127BF8000ECBF35 /* DigiData.swift in Sources */,
+				19BC30FC2127BF6100ECBF35 /* DigiKeyboardButton.swift in Sources */,
+				19BC30FF2127BF6F00ECBF35 /* DigiColors.swift in Sources */,
+				19BC30FA2127BF5400ECBF35 /* DigiKeyboardView.swift in Sources */,
 				19D4DB5B2127314900B24E6E /* ViewController.swift in Sources */,
 				19D4DB592127314900B24E6E /* AppDelegate.swift in Sources */,
 			);
@@ -415,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79MF628K3;
 				INFOPLIST_FILE = DigiKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,6 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79MF628K3;
 				INFOPLIST_FILE = DigiKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
