@@ -26,6 +26,7 @@ class DigiKeyboardButton: UIButton {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        self.imageView?.contentMode = .scaleAspectFit
         self.backgroundColor = isHighlighted ? hightlightBackgroundColor : defaultBackgroundColor
     }
 }
