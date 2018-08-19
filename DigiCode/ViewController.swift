@@ -20,9 +20,13 @@ class ViewController: UIViewController {
         guard let keyboardView = UINib(nibName: "DigiKeyboardView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? DigiKeyboardView else { return }
         keyboardView.delegate = self
         self.textField.inputView = keyboardView
-        //커스텀 인풋 뷰에 악세사리 뷰 추가
+        //커스텀 인풋 뷰에 악세사리 뷰, 스택 뷰 추가
+        let colorScheme = DigiColors(colorScheme: .light)
         let accessoryView = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40))
+        accessoryView.backgroundColor = colorScheme.accessoryBackgroundColor
         self.digiCodeStackView = UIStackView(frame: .zero)
+        self.digiCodeStackView.backgroundColor = colorScheme.accessoryPreviewBackgroundColor
+        self.digiCodeStackView.spacing = 4
         accessoryView.addSubview(self.digiCodeStackView)
         self.digiCodeStackView.translatesAutoresizingMaskIntoConstraints = false
         self.digiCodeStackView.centerXAnchor.constraint(equalTo: accessoryView.centerXAnchor).isActive = true
@@ -39,7 +43,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: DigiKeyboardViewDelegate {    
-    func didTouchUpCharacterButton(_ newCharacter: String) {
+    func didTouchUpCharacterKey(_ newCharacter: String) {
         self.textField.insertText(newCharacter)
         let image = UIImage(imageLiteralResourceName: "dark\(newCharacter.uppercased())")
         let imageView = UIImageView(image: image)
@@ -47,10 +51,17 @@ extension ViewController: DigiKeyboardViewDelegate {
         self.digiCodeStackView.addArrangedSubview(imageView)
     }
     
-    func didTouchUpBackspaceButton() {
+    func didTouchUpBackspaceKey() {
         self.textField.deleteBackward()
         guard let lastSubview = self.digiCodeStackView.arrangedSubviews.last else { return }
         lastSubview.removeFromSuperview()
+    }
+    
+    func didTouchUpSpaceKey() {
+        self.textField.insertText(" ")
+        for view in self.digiCodeStackView.arrangedSubviews {
+            view.removeFromSuperview()
+        }
     }
     
     func characterBeforeCursor() -> String? {
