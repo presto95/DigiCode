@@ -7,13 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19BC30F82127BF4800ECBF35 /* DigiKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19BC30F72127BF4800ECBF35 /* DigiKeyboardView.xib */; };
-		19BC30FA2127BF5400ECBF35 /* DigiKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC30F92127BF5400ECBF35 /* DigiKeyboardView.swift */; };
-		19BC30FC2127BF6100ECBF35 /* DigiKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC30FB2127BF6100ECBF35 /* DigiKeyboardButton.swift */; };
-		19BC30FF2127BF6F00ECBF35 /* DigiColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC30FE2127BF6F00ECBF35 /* DigiColors.swift */; };
-		19BC31012127BF8000ECBF35 /* DigiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC31002127BF8000ECBF35 /* DigiData.swift */; };
+		190E37A22129A80D001FEA63 /* EnglishKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37A12129A80D001FEA63 /* EnglishKeyboardView.swift */; };
+		190E37A42129A90E001FEA63 /* JapaneseKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37A32129A90E001FEA63 /* JapaneseKeyboardView.swift */; };
+		190E37A62129A916001FEA63 /* JapaneseKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190E37A52129A916001FEA63 /* JapaneseKeyboardView.xib */; };
+		190E37A82129A948001FEA63 /* NumbersKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190E37A72129A948001FEA63 /* NumbersKeyboardView.xib */; };
+		190E37AA2129A954001FEA63 /* NumbersKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37A92129A954001FEA63 /* NumbersKeyboardView.swift */; };
+		190E37AC2129A971001FEA63 /* SymbolsKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37AB2129A971001FEA63 /* SymbolsKeyboardView.swift */; };
+		190E37AE2129A977001FEA63 /* SymbolsKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190E37AD2129A977001FEA63 /* SymbolsKeyboardView.xib */; };
+		190E37B42129AA1F001FEA63 /* KeyboardViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37B32129AA1F001FEA63 /* KeyboardViewDelegate.swift */; };
+		190E37B52129AB72001FEA63 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC30FE2127BF6F00ECBF35 /* Colors.swift */; };
+		190E37B62129AB72001FEA63 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC31002127BF8000ECBF35 /* Language.swift */; };
+		190E37B72129AB72001FEA63 /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC30FB2127BF6100ECBF35 /* KeyboardButton.swift */; };
+		190E37B82129AB72001FEA63 /* KeyboardViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37B32129AA1F001FEA63 /* KeyboardViewDelegate.swift */; };
+		190E37B92129AB72001FEA63 /* EnglishKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19BC30F72127BF4800ECBF35 /* EnglishKeyboardView.xib */; };
+		190E37BA2129AB72001FEA63 /* EnglishKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37A12129A80D001FEA63 /* EnglishKeyboardView.swift */; };
+		190E37BB2129AB72001FEA63 /* JapaneseKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190E37A52129A916001FEA63 /* JapaneseKeyboardView.xib */; };
+		190E37BC2129AB72001FEA63 /* JapaneseKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37A32129A90E001FEA63 /* JapaneseKeyboardView.swift */; };
+		190E37BD2129AB72001FEA63 /* SymbolsKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190E37AD2129A977001FEA63 /* SymbolsKeyboardView.xib */; };
+		190E37BE2129AB72001FEA63 /* SymbolsKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37AB2129A971001FEA63 /* SymbolsKeyboardView.swift */; };
+		190E37BF2129AB72001FEA63 /* NumbersKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190E37A72129A948001FEA63 /* NumbersKeyboardView.xib */; };
+		190E37C02129AB72001FEA63 /* NumbersKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37A92129A954001FEA63 /* NumbersKeyboardView.swift */; };
+		190E37C12129AB72001FEA63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DB5F2127314A00B24E6E /* Assets.xcassets */; };
+		190E37C32129AC9A001FEA63 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37C22129AC9A001FEA63 /* Setting.swift */; };
+		190E37C42129AD0C001FEA63 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37C22129AC9A001FEA63 /* Setting.swift */; };
+		19BC30F82127BF4800ECBF35 /* EnglishKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19BC30F72127BF4800ECBF35 /* EnglishKeyboardView.xib */; };
+		19BC30FC2127BF6100ECBF35 /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC30FB2127BF6100ECBF35 /* KeyboardButton.swift */; };
+		19BC30FF2127BF6F00ECBF35 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC30FE2127BF6F00ECBF35 /* Colors.swift */; };
+		19BC31012127BF8000ECBF35 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC31002127BF8000ECBF35 /* Language.swift */; };
 		19D4DB592127314900B24E6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DB582127314900B24E6E /* AppDelegate.swift */; };
-		19D4DB5B2127314900B24E6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DB5A2127314900B24E6E /* ViewController.swift */; };
+		19D4DB5B2127314900B24E6E /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DB5A2127314900B24E6E /* HostViewController.swift */; };
 		19D4DB5E2127314900B24E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DB5C2127314900B24E6E /* Main.storyboard */; };
 		19D4DB602127314A00B24E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DB5F2127314A00B24E6E /* Assets.xcassets */; };
 		19D4DB632127314A00B24E6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DB612127314A00B24E6E /* LaunchScreen.storyboard */; };
@@ -46,14 +68,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		19BC30F72127BF4800ECBF35 /* DigiKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DigiKeyboardView.xib; sourceTree = "<group>"; };
-		19BC30F92127BF5400ECBF35 /* DigiKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiKeyboardView.swift; sourceTree = "<group>"; };
-		19BC30FB2127BF6100ECBF35 /* DigiKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiKeyboardButton.swift; sourceTree = "<group>"; };
-		19BC30FE2127BF6F00ECBF35 /* DigiColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiColors.swift; sourceTree = "<group>"; };
-		19BC31002127BF8000ECBF35 /* DigiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiData.swift; sourceTree = "<group>"; };
+		190E37A12129A80D001FEA63 /* EnglishKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnglishKeyboardView.swift; sourceTree = "<group>"; };
+		190E37A32129A90E001FEA63 /* JapaneseKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseKeyboardView.swift; sourceTree = "<group>"; };
+		190E37A52129A916001FEA63 /* JapaneseKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JapaneseKeyboardView.xib; sourceTree = "<group>"; };
+		190E37A72129A948001FEA63 /* NumbersKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumbersKeyboardView.xib; sourceTree = "<group>"; };
+		190E37A92129A954001FEA63 /* NumbersKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersKeyboardView.swift; sourceTree = "<group>"; };
+		190E37AB2129A971001FEA63 /* SymbolsKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsKeyboardView.swift; sourceTree = "<group>"; };
+		190E37AD2129A977001FEA63 /* SymbolsKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymbolsKeyboardView.xib; sourceTree = "<group>"; };
+		190E37B32129AA1F001FEA63 /* KeyboardViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewDelegate.swift; sourceTree = "<group>"; };
+		190E37C22129AC9A001FEA63 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		19BC30F72127BF4800ECBF35 /* EnglishKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnglishKeyboardView.xib; sourceTree = "<group>"; };
+		19BC30FB2127BF6100ECBF35 /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
+		19BC30FE2127BF6F00ECBF35 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		19BC31002127BF8000ECBF35 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		19D4DB552127314900B24E6E /* DigiCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D4DB582127314900B24E6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19D4DB5A2127314900B24E6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19D4DB5A2127314900B24E6E /* HostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
 		19D4DB5D2127314900B24E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19D4DB5F2127314A00B24E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19D4DB622127314A00B24E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,12 +111,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		190E37AF2129A981001FEA63 /* English */ = {
+			isa = PBXGroup;
+			children = (
+				19BC30F72127BF4800ECBF35 /* EnglishKeyboardView.xib */,
+				190E37A12129A80D001FEA63 /* EnglishKeyboardView.swift */,
+			);
+			path = English;
+			sourceTree = "<group>";
+		};
+		190E37B02129A986001FEA63 /* Japanese */ = {
+			isa = PBXGroup;
+			children = (
+				190E37A52129A916001FEA63 /* JapaneseKeyboardView.xib */,
+				190E37A32129A90E001FEA63 /* JapaneseKeyboardView.swift */,
+			);
+			path = Japanese;
+			sourceTree = "<group>";
+		};
+		190E37B12129A98A001FEA63 /* Numbers */ = {
+			isa = PBXGroup;
+			children = (
+				190E37A72129A948001FEA63 /* NumbersKeyboardView.xib */,
+				190E37A92129A954001FEA63 /* NumbersKeyboardView.swift */,
+			);
+			path = Numbers;
+			sourceTree = "<group>";
+		};
+		190E37B22129A98E001FEA63 /* Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				190E37AD2129A977001FEA63 /* SymbolsKeyboardView.xib */,
+				190E37AB2129A971001FEA63 /* SymbolsKeyboardView.swift */,
+			);
+			path = Symbols;
+			sourceTree = "<group>";
+		};
 		19BC30F62127BF2900ECBF35 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				19BC30FB2127BF6100ECBF35 /* DigiKeyboardButton.swift */,
-				19BC30F72127BF4800ECBF35 /* DigiKeyboardView.xib */,
-				19BC30F92127BF5400ECBF35 /* DigiKeyboardView.swift */,
+				19BC30FB2127BF6100ECBF35 /* KeyboardButton.swift */,
+				190E37B32129AA1F001FEA63 /* KeyboardViewDelegate.swift */,
+				190E37AF2129A981001FEA63 /* English */,
+				190E37B02129A986001FEA63 /* Japanese */,
+				190E37B22129A98E001FEA63 /* Symbols */,
+				190E37B12129A98A001FEA63 /* Numbers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,8 +163,9 @@
 		19BC30FD2127BF6400ECBF35 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				19BC30FE2127BF6F00ECBF35 /* DigiColors.swift */,
-				19BC31002127BF8000ECBF35 /* DigiData.swift */,
+				19BC30FE2127BF6F00ECBF35 /* Colors.swift */,
+				19BC31002127BF8000ECBF35 /* Language.swift */,
+				190E37C22129AC9A001FEA63 /* Setting.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -125,7 +195,7 @@
 				19D4DB612127314A00B24E6E /* LaunchScreen.storyboard */,
 				19D4DB582127314900B24E6E /* AppDelegate.swift */,
 				19D4DB5C2127314900B24E6E /* Main.storyboard */,
-				19D4DB5A2127314900B24E6E /* ViewController.swift */,
+				19D4DB5A2127314900B24E6E /* HostViewController.swift */,
 				19BC30FD2127BF6400ECBF35 /* Data */,
 				19BC30F62127BF2900ECBF35 /* Views */,
 				19D4DB5F2127314A00B24E6E /* Assets.xcassets */,
@@ -225,7 +295,10 @@
 			files = (
 				19D4DB632127314A00B24E6E /* LaunchScreen.storyboard in Resources */,
 				19D4DB602127314A00B24E6E /* Assets.xcassets in Resources */,
-				19BC30F82127BF4800ECBF35 /* DigiKeyboardView.xib in Resources */,
+				190E37AE2129A977001FEA63 /* SymbolsKeyboardView.xib in Resources */,
+				190E37A82129A948001FEA63 /* NumbersKeyboardView.xib in Resources */,
+				19BC30F82127BF4800ECBF35 /* EnglishKeyboardView.xib in Resources */,
+				190E37A62129A916001FEA63 /* JapaneseKeyboardView.xib in Resources */,
 				19D4DB5E2127314900B24E6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +307,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190E37BF2129AB72001FEA63 /* NumbersKeyboardView.xib in Resources */,
+				190E37BD2129AB72001FEA63 /* SymbolsKeyboardView.xib in Resources */,
+				190E37BB2129AB72001FEA63 /* JapaneseKeyboardView.xib in Resources */,
+				190E37B92129AB72001FEA63 /* EnglishKeyboardView.xib in Resources */,
+				190E37C12129AB72001FEA63 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,11 +322,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BC31012127BF8000ECBF35 /* DigiData.swift in Sources */,
-				19BC30FC2127BF6100ECBF35 /* DigiKeyboardButton.swift in Sources */,
-				19BC30FF2127BF6F00ECBF35 /* DigiColors.swift in Sources */,
-				19BC30FA2127BF5400ECBF35 /* DigiKeyboardView.swift in Sources */,
-				19D4DB5B2127314900B24E6E /* ViewController.swift in Sources */,
+				190E37A22129A80D001FEA63 /* EnglishKeyboardView.swift in Sources */,
+				19BC31012127BF8000ECBF35 /* Language.swift in Sources */,
+				19BC30FC2127BF6100ECBF35 /* KeyboardButton.swift in Sources */,
+				190E37AC2129A971001FEA63 /* SymbolsKeyboardView.swift in Sources */,
+				19BC30FF2127BF6F00ECBF35 /* Colors.swift in Sources */,
+				190E37AA2129A954001FEA63 /* NumbersKeyboardView.swift in Sources */,
+				190E37C32129AC9A001FEA63 /* Setting.swift in Sources */,
+				190E37A42129A90E001FEA63 /* JapaneseKeyboardView.swift in Sources */,
+				19D4DB5B2127314900B24E6E /* HostViewController.swift in Sources */,
+				190E37B42129AA1F001FEA63 /* KeyboardViewDelegate.swift in Sources */,
 				19D4DB592127314900B24E6E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +340,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190E37C42129AD0C001FEA63 /* Setting.swift in Sources */,
+				190E37C02129AB72001FEA63 /* NumbersKeyboardView.swift in Sources */,
+				190E37B72129AB72001FEA63 /* KeyboardButton.swift in Sources */,
+				190E37BE2129AB72001FEA63 /* SymbolsKeyboardView.swift in Sources */,
+				190E37B62129AB72001FEA63 /* Language.swift in Sources */,
 				19D4DB712127316A00B24E6E /* KeyboardViewController.swift in Sources */,
+				190E37B82129AB72001FEA63 /* KeyboardViewDelegate.swift in Sources */,
+				190E37BC2129AB72001FEA63 /* JapaneseKeyboardView.swift in Sources */,
+				190E37BA2129AB72001FEA63 /* EnglishKeyboardView.swift in Sources */,
+				190E37B52129AB72001FEA63 /* Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

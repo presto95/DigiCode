@@ -10,16 +10,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Host View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DigiCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HostViewController" customModule="DigiCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qDG-Ie-WIy">
+                                <rect key="frame" x="276" y="68" width="83" height="29"/>
+                                <segments>
+                                    <segment title="ENG"/>
+                                    <segment title="JPN"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="PL7-JN-Zoa"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DigiCode Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBZ-WL-Qax">
+                                <rect key="frame" x="16" y="70" width="180.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idS-Dp-8t4">
+                                <rect key="frame" x="16" y="186" width="49" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ruH-XE-8Ko">
-                                <rect key="frame" x="16" y="120" width="343" height="30"/>
+                                <rect key="frame" x="16" y="218.5" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -28,12 +50,19 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ruH-XE-8Ko" secondAttribute="trailing" constant="16" id="1iE-mj-gCU"/>
-                            <constraint firstItem="ruH-XE-8Ko" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="8D7-xy-BaX"/>
+                            <constraint firstItem="idS-Dp-8t4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TCb-24-nhU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qDG-Ie-WIy" secondAttribute="trailing" constant="16" id="VCF-1p-T4z"/>
+                            <constraint firstItem="ruH-XE-8Ko" firstAttribute="top" secondItem="idS-Dp-8t4" secondAttribute="bottom" constant="8" id="gEN-3Q-6nX"/>
+                            <constraint firstItem="fBZ-WL-Qax" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ha5-sr-X2E"/>
+                            <constraint firstItem="fBZ-WL-Qax" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lW5-Zu-hwD"/>
+                            <constraint firstItem="ruH-XE-8Ko" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="nIS-HB-bOS"/>
+                            <constraint firstItem="qDG-Ie-WIy" firstAttribute="centerY" secondItem="fBZ-WL-Qax" secondAttribute="centerY" id="nnA-wU-MeV"/>
                             <constraint firstItem="ruH-XE-8Ko" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ooT-Wt-uwp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="segmentedControl" destination="qDG-Ie-WIy" id="2Zp-W2-vRl"/>
                         <outlet property="textField" destination="ruH-XE-8Ko" id="9KC-wz-sp4"/>
                     </connections>
                 </viewController>
