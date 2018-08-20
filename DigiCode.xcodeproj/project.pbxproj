@@ -30,6 +30,8 @@
 		190E37C12129AB72001FEA63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DB5F2127314A00B24E6E /* Assets.xcassets */; };
 		190E37C32129AC9A001FEA63 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37C22129AC9A001FEA63 /* Setting.swift */; };
 		190E37C42129AD0C001FEA63 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E37C22129AC9A001FEA63 /* Setting.swift */; };
+		19938D57212A817B00341BBD /* Pixel Digivolve.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19938D56212A817B00341BBD /* Pixel Digivolve.otf */; };
+		19938D58212A817B00341BBD /* Pixel Digivolve.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19938D56212A817B00341BBD /* Pixel Digivolve.otf */; };
 		19BC30F82127BF4800ECBF35 /* EnglishKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19BC30F72127BF4800ECBF35 /* EnglishKeyboardView.xib */; };
 		19BC30FC2127BF6100ECBF35 /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC30FB2127BF6100ECBF35 /* KeyboardButton.swift */; };
 		19BC30FF2127BF6F00ECBF35 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC30FE2127BF6F00ECBF35 /* Colors.swift */; };
@@ -77,6 +79,7 @@
 		190E37AD2129A977001FEA63 /* SymbolsKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymbolsKeyboardView.xib; sourceTree = "<group>"; };
 		190E37B32129AA1F001FEA63 /* KeyboardViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewDelegate.swift; sourceTree = "<group>"; };
 		190E37C22129AC9A001FEA63 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		19938D56212A817B00341BBD /* Pixel Digivolve.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pixel Digivolve.otf"; sourceTree = "<group>"; };
 		19BC30F72127BF4800ECBF35 /* EnglishKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnglishKeyboardView.xib; sourceTree = "<group>"; };
 		19BC30FB2127BF6100ECBF35 /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
 		19BC30FE2127BF6F00ECBF35 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -191,6 +194,7 @@
 		19D4DB572127314900B24E6E /* DigiCode */ = {
 			isa = PBXGroup;
 			children = (
+				19938D56212A817B00341BBD /* Pixel Digivolve.otf */,
 				19D4DB642127314A00B24E6E /* Info.plist */,
 				19D4DB612127314A00B24E6E /* LaunchScreen.storyboard */,
 				19D4DB582127314900B24E6E /* AppDelegate.swift */,
@@ -298,6 +302,7 @@
 				190E37AE2129A977001FEA63 /* SymbolsKeyboardView.xib in Resources */,
 				190E37A82129A948001FEA63 /* NumbersKeyboardView.xib in Resources */,
 				19BC30F82127BF4800ECBF35 /* EnglishKeyboardView.xib in Resources */,
+				19938D57212A817B00341BBD /* Pixel Digivolve.otf in Resources */,
 				190E37A62129A916001FEA63 /* JapaneseKeyboardView.xib in Resources */,
 				19D4DB5E2127314900B24E6E /* Main.storyboard in Resources */,
 			);
@@ -308,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				190E37BF2129AB72001FEA63 /* NumbersKeyboardView.xib in Resources */,
+				19938D58212A817B00341BBD /* Pixel Digivolve.otf in Resources */,
 				190E37BD2129AB72001FEA63 /* SymbolsKeyboardView.xib in Resources */,
 				190E37BB2129AB72001FEA63 /* JapaneseKeyboardView.xib in Resources */,
 				190E37B92129AB72001FEA63 /* EnglishKeyboardView.xib in Resources */,

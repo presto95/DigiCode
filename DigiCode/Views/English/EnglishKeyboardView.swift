@@ -22,6 +22,8 @@ class EnglishKeyboardView: UIView {
     @IBOutlet weak var firstLineStackView: UIStackView!
     @IBOutlet weak var secondLineStackView: UIStackView!
     @IBOutlet weak var thirdLineStackView: UIStackView!
+    @IBOutlet weak var secondLineStackViewLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var secondLineStackViewTrailingConstraint: NSLayoutConstraint!
     
     override init(frame: CGRect) {
         super.init(frame: frame)

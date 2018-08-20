@@ -54,31 +54,31 @@ extension HostViewController {
             guard let firstOfFirstStackView = keyboardView.firstLineStackView.arrangedSubviews.first else { return }
             guard let lastOfFirstStackView = keyboardView.firstLineStackView.arrangedSubviews.last else { return }
             stackView.arrangedSubviews.last?.removeFromSuperview()
-            stackView.removeConstraints(stackView.constraints)
-            NSLayoutConstraint.activate([
-                stackView.topAnchor.constraint(equalTo: keyboardView.firstLineStackView.bottomAnchor, constant: 16),
-                stackView.heightAnchor.constraint(equalTo: keyboardView.firstLineStackView.heightAnchor),
-                stackView.leadingAnchor.constraint(equalTo: firstOfFirstStackView.centerXAnchor),
-                stackView.trailingAnchor.constraint(equalTo: lastOfFirstStackView.centerXAnchor)
-                ])
+            keyboardView.secondLineStackViewLeadingConstraint.isActive = false
+            keyboardView.secondLineStackViewTrailingConstraint.isActive = false
+            keyboardView.secondLineStackViewLeadingConstraint = stackView.leadingAnchor.constraint(equalTo: firstOfFirstStackView.centerXAnchor)
+            keyboardView.secondLineStackViewTrailingConstraint = stackView.trailingAnchor.constraint(equalTo: lastOfFirstStackView.centerXAnchor)
+            keyboardView.secondLineStackViewLeadingConstraint.isActive = true
+            keyboardView.secondLineStackViewTrailingConstraint.isActive = true
         } else if index == 1 && count == 9 {
             let button = KeyboardButton(type: .system)
-            button.character = "-"
+            button.character = "ー"
+            button.tintColor = colors.tintColor
             button.setImage(#imageLiteral(resourceName: "jpn_dark_dash"), for: [])
             button.addTarget(self, action: #selector(touchUpDashButton), for: [.touchUpInside, .touchUpOutside])
             stackView.addArrangedSubview(button)
-            stackView.removeConstraints(stackView.constraints)
-            NSLayoutConstraint.activate([
-                stackView.topAnchor.constraint(equalTo: keyboardView.firstLineStackView.bottomAnchor, constant: 16),
-                stackView.heightAnchor.constraint(equalTo: keyboardView.firstLineStackView.heightAnchor),
-                stackView.leadingAnchor.constraint(equalTo: keyboardView.leadingAnchor, constant: 4),
-                stackView.trailingAnchor.constraint(equalTo: keyboardView.trailingAnchor, constant: -4)
-                ])
+            keyboardView.secondLineStackViewLeadingConstraint.isActive = false
+            keyboardView.secondLineStackViewTrailingConstraint.isActive = false
+            keyboardView.secondLineStackViewLeadingConstraint = stackView.leadingAnchor.constraint(equalTo: keyboardView.leadingAnchor, constant: 4)
+            keyboardView.secondLineStackViewTrailingConstraint = stackView.trailingAnchor.constraint(equalTo: keyboardView.trailingAnchor, constant: -4)
+            keyboardView.secondLineStackViewLeadingConstraint.isActive = true
+            keyboardView.secondLineStackViewTrailingConstraint.isActive = true
+            keyboardView.layoutIfNeeded()
         }
     }
     @objc private func touchUpDashButton() {
         UIDevice.current.playInputClick()
-        self.textField.insertText("-")
+        self.textField.insertText("ー")
     }
 }
 
