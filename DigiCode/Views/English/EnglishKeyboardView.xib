@@ -15,161 +15,161 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EnglishKeyboardView" customModule="DigiCode" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="295"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EqG-48-0HU">
-                    <rect key="frame" x="4" y="16" width="367" height="57"/>
+                    <rect key="frame" x="4" y="16" width="367" height="38"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEu-GE-kyd" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="33" height="57"/>
+                            <rect key="frame" x="0.0" y="0.0" width="33" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="q"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yv0-fN-Hfz" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="37" y="0.0" width="33" height="57"/>
+                            <rect key="frame" x="37" y="0.0" width="33" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="w"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B44-ze-RDM" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="74" y="0.0" width="33.5" height="57"/>
+                            <rect key="frame" x="74" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="e"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HP-Ze-8Xe" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="111.5" y="0.0" width="33" height="57"/>
+                            <rect key="frame" x="111.5" y="0.0" width="33" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="r"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4R-tZ-iBs" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="148.5" y="0.0" width="33" height="57"/>
+                            <rect key="frame" x="148.5" y="0.0" width="33" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="t"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxl-LI-5tp" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="185.5" y="0.0" width="33" height="57"/>
+                            <rect key="frame" x="185.5" y="0.0" width="33" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="y"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycm-p3-BZW" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="222.5" y="0.0" width="33" height="57"/>
+                            <rect key="frame" x="222.5" y="0.0" width="33" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="u"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMH-BL-V3y" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="259.5" y="0.0" width="33.5" height="57"/>
+                            <rect key="frame" x="259.5" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="i"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfn-02-H0t" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="297" y="0.0" width="33" height="57"/>
+                            <rect key="frame" x="297" y="0.0" width="33" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="o"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCo-dH-J8l" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="334" y="0.0" width="33" height="57"/>
+                            <rect key="frame" x="334" y="0.0" width="33" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="p"/>
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="38" id="nG4-4U-9wC"/>
+                        <constraint firstAttribute="height" constant="38" id="yeZ-9p-7ik"/>
                     </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="O2t-Uu-H4E">
-                    <rect key="frame" x="20.5" y="89" width="334" height="56.5"/>
+                    <rect key="frame" x="20.5" y="70" width="334" height="38"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufE-RT-EOG" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="33.5" height="56.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="a"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzV-fL-opW" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="37.5" y="0.0" width="33.5" height="56.5"/>
+                            <rect key="frame" x="37.5" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="s"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58r-61-uWc" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="75" y="0.0" width="33.5" height="56.5"/>
+                            <rect key="frame" x="75" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="d"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zg-r8-uKo" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="112.5" y="0.0" width="33.5" height="56.5"/>
+                            <rect key="frame" x="112.5" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="f"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGy-wo-s1S" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="150" y="0.0" width="34" height="56.5"/>
+                            <rect key="frame" x="150" y="0.0" width="34" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="g"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLw-uq-mA6" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="188" y="0.0" width="33.5" height="56.5"/>
+                            <rect key="frame" x="188" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="h"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afm-qV-NMs" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="225.5" y="0.0" width="33.5" height="56.5"/>
+                            <rect key="frame" x="225.5" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="j"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ga-ka-phu" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="263" y="0.0" width="33.5" height="56.5"/>
+                            <rect key="frame" x="263" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="k"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJR-cB-ujG" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="300.5" y="0.0" width="33.5" height="56.5"/>
+                            <rect key="frame" x="300.5" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="l"/>
                         </button>
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DRQ-fY-IdB">
-                    <rect key="frame" x="58" y="161.5" width="259" height="57"/>
+                    <rect key="frame" x="58" y="124" width="259" height="38"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9A-o3-vR8" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="33.5" height="57"/>
+                            <rect key="frame" x="0.0" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="z"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMb-Xp-aho" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="37.5" y="0.0" width="33.5" height="57"/>
+                            <rect key="frame" x="37.5" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="x"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CY-9v-xQ3" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="75" y="0.0" width="33.5" height="57"/>
+                            <rect key="frame" x="75" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="c"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkb-XJ-bec" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="112.5" y="0.0" width="34" height="57"/>
+                            <rect key="frame" x="112.5" y="0.0" width="34" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="v"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyX-uQ-2uM" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="150.5" y="0.0" width="33.5" height="57"/>
+                            <rect key="frame" x="150.5" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="b"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGj-MZ-g1i" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="188" y="0.0" width="33.5" height="57"/>
+                            <rect key="frame" x="188" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="n"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpu-1H-Jaq" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                            <rect key="frame" x="225.5" y="0.0" width="33.5" height="57"/>
+                            <rect key="frame" x="225.5" y="0.0" width="33.5" height="38"/>
                             <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                             <state key="normal" title="m"/>
                         </button>
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFT-4q-cDn" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                    <rect key="frame" x="314.5" y="161.5" width="56.5" height="57"/>
+                    <rect key="frame" x="333" y="124" width="38" height="38"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="iFT-4q-cDn" secondAttribute="height" multiplier="1:1" id="597-sh-FWM"/>
+                        <constraint firstAttribute="width" secondItem="iFT-4q-cDn" secondAttribute="height" multiplier="1:1" id="uou-zp-aHE"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                     <connections>
@@ -177,44 +177,44 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQF-Rr-9vl" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                    <rect key="frame" x="4" y="161.5" width="57" height="57"/>
+                    <rect key="frame" x="4" y="124" width="38" height="38"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="lQF-Rr-9vl" secondAttribute="height" multiplier="1:1" id="MdL-Ok-SI6"/>
+                        <constraint firstAttribute="width" secondItem="lQF-Rr-9vl" secondAttribute="height" multiplier="1:1" id="QW1-Zw-Uv6"/>
                     </constraints>
                     <connections>
                         <action selector="touchUpShiftKey:" destination="iN0-l3-epB" eventType="touchUpInside" id="6eb-6S-Sfu"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg4-i7-q9x" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                    <rect key="frame" x="95" y="234.5" width="184.5" height="56.5"/>
+                    <rect key="frame" x="95" y="178" width="184.5" height="38"/>
                     <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                     <connections>
                         <action selector="touchUpSpaceKey:" destination="iN0-l3-epB" eventType="touchUpInside" id="TWJ-4O-xKC"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHc-pm-svW" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                    <rect key="frame" x="283.5" y="234.5" width="33.5" height="56.5"/>
+                    <rect key="frame" x="283" y="178" width="33.5" height="38"/>
                     <connections>
                         <action selector="touchUpDotKey" destination="iN0-l3-epB" eventType="touchUpInside" id="TeC-pQ-ZKv"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Umr-rU-nXK" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                    <rect key="frame" x="314.5" y="234.5" width="56.5" height="56.5"/>
+                    <rect key="frame" x="333" y="178" width="38" height="38"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="Umr-rU-nXK" secondAttribute="height" multiplier="1:1" id="lf7-09-kdv"/>
+                        <constraint firstAttribute="width" secondItem="Umr-rU-nXK" secondAttribute="height" multiplier="1:1" id="UnM-up-jlM"/>
                     </constraints>
                     <connections>
                         <action selector="touchUpEnterKey" destination="iN0-l3-epB" eventType="touchUpInside" id="hdc-iy-x3O"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJc-YJ-M8Z" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                    <rect key="frame" x="4" y="234.5" width="30" height="56.5"/>
+                    <rect key="frame" x="4" y="178" width="41.5" height="38"/>
                     <connections>
                         <action selector="touchUpOneTwoThreeKey" destination="iN0-l3-epB" eventType="touchUpInside" id="NIJ-dy-Vzj"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k1-QL-gdM" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
-                    <rect key="frame" x="37.5" y="234.5" width="53.5" height="56.5"/>
+                    <rect key="frame" x="49.5" y="178" width="41.5" height="38"/>
                     <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                     <connections>
                         <action selector="touchUpGlobeKey" destination="iN0-l3-epB" eventType="touchUpInside" id="QHH-66-shq"/>
@@ -223,44 +223,42 @@
             </subviews>
             <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="Umr-rU-nXK" firstAttribute="top" secondItem="Dg4-i7-q9x" secondAttribute="top" id="0H2-Ij-9wV"/>
-                <constraint firstItem="oHc-pm-svW" firstAttribute="top" secondItem="Dg4-i7-q9x" secondAttribute="top" id="2yE-Qm-Ay9"/>
-                <constraint firstItem="4k1-QL-gdM" firstAttribute="leading" secondItem="oJc-YJ-M8Z" secondAttribute="trailing" constant="4" id="33K-zh-yRY"/>
-                <constraint firstItem="Umr-rU-nXK" firstAttribute="centerY" secondItem="Dg4-i7-q9x" secondAttribute="centerY" id="3me-Az-fcL"/>
-                <constraint firstItem="O2t-Uu-H4E" firstAttribute="top" secondItem="EqG-48-0HU" secondAttribute="bottom" constant="16" id="6WL-sk-Mjk"/>
-                <constraint firstItem="DRQ-fY-IdB" firstAttribute="leading" secondItem="jzV-fL-opW" secondAttribute="leading" id="8jz-0y-5XY"/>
-                <constraint firstItem="lQF-Rr-9vl" firstAttribute="height" secondItem="EqG-48-0HU" secondAttribute="height" id="9fC-5g-svA"/>
-                <constraint firstItem="EqG-48-0HU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="C8s-TM-9Mz"/>
-                <constraint firstItem="O2t-Uu-H4E" firstAttribute="leading" secondItem="ZEu-GE-kyd" secondAttribute="centerX" id="Fke-0Y-Zlf"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Umr-rU-nXK" secondAttribute="trailing" constant="4" id="Lox-rd-RN4"/>
-                <constraint firstItem="DRQ-fY-IdB" firstAttribute="trailing" secondItem="2ga-ka-phu" secondAttribute="trailing" id="NKg-gg-h0B"/>
-                <constraint firstItem="Dg4-i7-q9x" firstAttribute="trailing" secondItem="iGj-MZ-g1i" secondAttribute="trailing" id="Peb-k1-8mk"/>
-                <constraint firstItem="Dg4-i7-q9x" firstAttribute="height" secondItem="DRQ-fY-IdB" secondAttribute="height" id="QjT-Jv-Rh5"/>
-                <constraint firstItem="DRQ-fY-IdB" firstAttribute="height" secondItem="EqG-48-0HU" secondAttribute="height" id="Sff-TE-A23"/>
-                <constraint firstItem="oJc-YJ-M8Z" firstAttribute="centerY" secondItem="Dg4-i7-q9x" secondAttribute="centerY" id="U2D-02-msm"/>
-                <constraint firstItem="oHc-pm-svW" firstAttribute="leading" secondItem="cpu-1H-Jaq" secondAttribute="leading" id="Vhs-aV-TlK"/>
-                <constraint firstItem="iFT-4q-cDn" firstAttribute="bottom" secondItem="DRQ-fY-IdB" secondAttribute="bottom" id="Xr4-lJ-N3s"/>
-                <constraint firstItem="Dg4-i7-q9x" firstAttribute="leading" secondItem="bMb-Xp-aho" secondAttribute="leading" id="XwM-Dp-ce8"/>
-                <constraint firstItem="Umr-rU-nXK" firstAttribute="bottom" secondItem="Dg4-i7-q9x" secondAttribute="bottom" id="Y5O-a4-9YK"/>
-                <constraint firstItem="EqG-48-0HU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="ZcY-Py-ZFo"/>
-                <constraint firstItem="O2t-Uu-H4E" firstAttribute="height" secondItem="EqG-48-0HU" secondAttribute="height" id="Zvo-fQ-xia"/>
-                <constraint firstItem="O2t-Uu-H4E" firstAttribute="trailing" secondItem="PCo-dH-J8l" secondAttribute="centerX" id="b52-6O-1FS"/>
-                <constraint firstItem="oHc-pm-svW" firstAttribute="bottom" secondItem="Dg4-i7-q9x" secondAttribute="bottom" id="bO6-Rc-UX6"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Dg4-i7-q9x" secondAttribute="bottom" constant="4" id="c4C-M6-xTv"/>
-                <constraint firstItem="oHc-pm-svW" firstAttribute="trailing" secondItem="cpu-1H-Jaq" secondAttribute="trailing" id="cId-69-Wu8"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Umr-rU-nXK" secondAttribute="trailing" constant="4" id="eYe-ZM-eeK"/>
-                <constraint firstItem="lQF-Rr-9vl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="feY-MX-Ycu"/>
-                <constraint firstItem="Dg4-i7-q9x" firstAttribute="top" secondItem="DRQ-fY-IdB" secondAttribute="bottom" constant="16" id="fva-Y7-eq7"/>
-                <constraint firstItem="Dg4-i7-q9x" firstAttribute="leading" secondItem="4k1-QL-gdM" secondAttribute="trailing" constant="4" id="gco-4u-dY7"/>
-                <constraint firstItem="lQF-Rr-9vl" firstAttribute="bottom" secondItem="DRQ-fY-IdB" secondAttribute="bottom" id="h0F-yl-wsZ"/>
-                <constraint firstAttribute="trailing" secondItem="EqG-48-0HU" secondAttribute="trailing" constant="4" id="hAZ-Pz-Ywf"/>
-                <constraint firstItem="oJc-YJ-M8Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="hQL-v8-921"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iFT-4q-cDn" secondAttribute="trailing" constant="4" id="kIF-3v-7yW"/>
-                <constraint firstItem="4k1-QL-gdM" firstAttribute="height" secondItem="Dg4-i7-q9x" secondAttribute="height" id="lyM-3v-Rip"/>
-                <constraint firstItem="iFT-4q-cDn" firstAttribute="height" secondItem="EqG-48-0HU" secondAttribute="height" id="pji-k3-xfc"/>
-                <constraint firstItem="DRQ-fY-IdB" firstAttribute="top" secondItem="O2t-Uu-H4E" secondAttribute="bottom" constant="16" id="qa0-Zg-doV"/>
-                <constraint firstItem="4k1-QL-gdM" firstAttribute="centerY" secondItem="Dg4-i7-q9x" secondAttribute="centerY" id="tvb-HJ-wb8"/>
-                <constraint firstItem="oJc-YJ-M8Z" firstAttribute="height" secondItem="Dg4-i7-q9x" secondAttribute="height" id="xKR-hi-0Cz"/>
+                <constraint firstItem="lQF-Rr-9vl" firstAttribute="bottom" secondItem="DRQ-fY-IdB" secondAttribute="bottom" id="0cH-i6-Hm7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EqG-48-0HU" secondAttribute="trailing" constant="4" id="166-Z3-BSe"/>
+                <constraint firstItem="DRQ-fY-IdB" firstAttribute="trailing" secondItem="2ga-ka-phu" secondAttribute="trailing" id="1PC-DO-jR5"/>
+                <constraint firstItem="EqG-48-0HU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="2E5-0x-1M1"/>
+                <constraint firstItem="DRQ-fY-IdB" firstAttribute="height" secondItem="EqG-48-0HU" secondAttribute="height" id="2GB-bh-bAY"/>
+                <constraint firstItem="lQF-Rr-9vl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="3Gb-ds-hIf"/>
+                <constraint firstItem="oHc-pm-svW" firstAttribute="bottom" secondItem="Dg4-i7-q9x" secondAttribute="bottom" id="4nq-zj-fl7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Umr-rU-nXK" secondAttribute="trailing" constant="4" id="Bd9-KN-INO"/>
+                <constraint firstItem="Dg4-i7-q9x" firstAttribute="top" secondItem="DRQ-fY-IdB" secondAttribute="bottom" constant="16" id="CyV-LE-7rS"/>
+                <constraint firstItem="DRQ-fY-IdB" firstAttribute="top" secondItem="O2t-Uu-H4E" secondAttribute="bottom" constant="16" id="D3d-iL-phj"/>
+                <constraint firstItem="oJc-YJ-M8Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="DT2-Ta-LtK"/>
+                <constraint firstItem="EqG-48-0HU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="GLX-3w-Rqn"/>
+                <constraint firstItem="O2t-Uu-H4E" firstAttribute="leading" secondItem="ZEu-GE-kyd" secondAttribute="centerX" id="HaP-uW-AsD"/>
+                <constraint firstItem="oHc-pm-svW" firstAttribute="top" secondItem="Dg4-i7-q9x" secondAttribute="top" id="Kub-BH-c4d"/>
+                <constraint firstItem="4k1-QL-gdM" firstAttribute="leading" secondItem="oJc-YJ-M8Z" secondAttribute="trailing" constant="4" id="N5y-qo-tVN"/>
+                <constraint firstItem="Dg4-i7-q9x" firstAttribute="height" secondItem="EqG-48-0HU" secondAttribute="height" id="NCL-zB-JY2"/>
+                <constraint firstItem="DRQ-fY-IdB" firstAttribute="leading" secondItem="jzV-fL-opW" secondAttribute="leading" id="Spe-ym-FWJ"/>
+                <constraint firstItem="O2t-Uu-H4E" firstAttribute="trailing" secondItem="PCo-dH-J8l" secondAttribute="centerX" id="UAE-dj-RQq"/>
+                <constraint firstItem="4k1-QL-gdM" firstAttribute="width" secondItem="oJc-YJ-M8Z" secondAttribute="width" id="W8q-co-SOJ"/>
+                <constraint firstItem="oHc-pm-svW" firstAttribute="leading" secondItem="cpu-1H-Jaq" secondAttribute="leading" id="WsW-If-JRX"/>
+                <constraint firstItem="iFT-4q-cDn" firstAttribute="height" secondItem="EqG-48-0HU" secondAttribute="height" id="bS9-2Z-XDn"/>
+                <constraint firstItem="lQF-Rr-9vl" firstAttribute="height" secondItem="EqG-48-0HU" secondAttribute="height" id="bhH-0q-Bew"/>
+                <constraint firstItem="4k1-QL-gdM" firstAttribute="top" secondItem="Dg4-i7-q9x" secondAttribute="top" id="d1i-JO-hN7"/>
+                <constraint firstItem="O2t-Uu-H4E" firstAttribute="height" secondItem="EqG-48-0HU" secondAttribute="height" id="fdH-Cc-h3N"/>
+                <constraint firstItem="Umr-rU-nXK" firstAttribute="bottom" secondItem="Dg4-i7-q9x" secondAttribute="bottom" id="gFV-hU-mcy"/>
+                <constraint firstItem="oJc-YJ-M8Z" firstAttribute="top" secondItem="Dg4-i7-q9x" secondAttribute="top" id="hcX-MW-htm"/>
+                <constraint firstItem="O2t-Uu-H4E" firstAttribute="top" secondItem="EqG-48-0HU" secondAttribute="bottom" constant="16" id="jKr-lO-81B"/>
+                <constraint firstItem="iFT-4q-cDn" firstAttribute="bottom" secondItem="DRQ-fY-IdB" secondAttribute="bottom" id="mOx-T5-iaw"/>
+                <constraint firstItem="Dg4-i7-q9x" firstAttribute="leading" secondItem="4k1-QL-gdM" secondAttribute="trailing" constant="4" id="naB-tS-QqS"/>
+                <constraint firstItem="Dg4-i7-q9x" firstAttribute="leading" secondItem="bMb-Xp-aho" secondAttribute="leading" id="oeP-0a-kaU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iFT-4q-cDn" secondAttribute="trailing" constant="4" id="qao-Cl-xdk"/>
+                <constraint firstItem="oJc-YJ-M8Z" firstAttribute="bottom" secondItem="Dg4-i7-q9x" secondAttribute="bottom" id="rsE-Rq-l2M"/>
+                <constraint firstItem="4k1-QL-gdM" firstAttribute="bottom" secondItem="Dg4-i7-q9x" secondAttribute="bottom" id="tEl-8J-2MH"/>
+                <constraint firstItem="Umr-rU-nXK" firstAttribute="top" secondItem="Dg4-i7-q9x" secondAttribute="top" id="vBA-J4-o2z"/>
+                <constraint firstItem="Dg4-i7-q9x" firstAttribute="trailing" secondItem="iGj-MZ-g1i" secondAttribute="trailing" id="w7a-xn-KnI"/>
+                <constraint firstItem="oHc-pm-svW" firstAttribute="trailing" secondItem="cpu-1H-Jaq" secondAttribute="trailing" id="ySn-yR-LPD"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
@@ -276,7 +274,7 @@
                 <outlet property="spaceButton" destination="Dg4-i7-q9x" id="u8x-SH-Ecr"/>
                 <outlet property="thirdLineStackView" destination="DRQ-fY-IdB" id="gTd-fq-nn2"/>
             </connections>
-            <point key="canvasLocation" x="239.5" y="20.5"/>
+            <point key="canvasLocation" x="239.5" y="-17"/>
         </view>
     </objects>
 </document>

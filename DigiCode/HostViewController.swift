@@ -13,10 +13,10 @@ class HostViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     let colors = Colors(colorScheme: .light)
-    var digiKeyboardView: EnglishKeyboardView!
-    var digiCodeStackView: UIStackView!
+    var keyboardView: EnglishKeyboardView!
+    var codeStackView: UIStackView!
     var isShifted: Bool {
-        return digiKeyboardView.shiftButton.isSelected
+        return keyboardView.shiftButton.isSelected
     }
     var language: KeyboardLanguage {
         if segmentedControl.selectedSegmentIndex == 0 {
@@ -32,7 +32,7 @@ class HostViewController: UIViewController {
         makeKeyboardViewAsInputView()
         let accessoryView = makePreview()
         makePreviewStackView()
-        attachStackView(self.digiCodeStackView, to: accessoryView)
+        attachStackView(self.codeStackView, to: accessoryView)
         makePreviewAsInputViewAccessoryView(accessoryView)
         NotificationCenter.default.addObserver(self, selector: #selector(reloadViews), name: .UIApplicationWillEnterForeground, object: nil)
     }
@@ -47,6 +47,38 @@ class HostViewController: UIViewController {
 extension HostViewController {
     @IBAction func selectSegmentedControl(_ sender: UISegmentedControl) {
         //키보드 언어 바꾸기
+        let count = keyboardView.secondLineStackView.arrangedSubviews.count
+        let index = sender.selectedSegmentIndex
+        guard let stackView = keyboardView.secondLineStackView else { return }
+        if index == 0 && count == 10 {
+            guard let firstOfFirstStackView = keyboardView.firstLineStackView.arrangedSubviews.first else { return }
+            guard let lastOfFirstStackView = keyboardView.firstLineStackView.arrangedSubviews.last else { return }
+            stackView.arrangedSubviews.last?.removeFromSuperview()
+            stackView.removeConstraints(stackView.constraints)
+            NSLayoutConstraint.activate([
+                stackView.topAnchor.constraint(equalTo: keyboardView.firstLineStackView.bottomAnchor, constant: 16),
+                stackView.heightAnchor.constraint(equalTo: keyboardView.firstLineStackView.heightAnchor),
+                stackView.leadingAnchor.constraint(equalTo: firstOfFirstStackView.centerXAnchor),
+                stackView.trailingAnchor.constraint(equalTo: lastOfFirstStackView.centerXAnchor)
+                ])
+        } else if index == 1 && count == 9 {
+            let button = KeyboardButton(type: .system)
+            button.character = "-"
+            button.setImage(#imageLiteral(resourceName: "jpn_dark_dash"), for: [])
+            button.addTarget(self, action: #selector(touchUpDashButton), for: [.touchUpInside, .touchUpOutside])
+            stackView.addArrangedSubview(button)
+            stackView.removeConstraints(stackView.constraints)
+            NSLayoutConstraint.activate([
+                stackView.topAnchor.constraint(equalTo: keyboardView.firstLineStackView.bottomAnchor, constant: 16),
+                stackView.heightAnchor.constraint(equalTo: keyboardView.firstLineStackView.heightAnchor),
+                stackView.leadingAnchor.constraint(equalTo: keyboardView.leadingAnchor, constant: 4),
+                stackView.trailingAnchor.constraint(equalTo: keyboardView.trailingAnchor, constant: -4)
+                ])
+        }
+    }
+    @objc private func touchUpDashButton() {
+        UIDevice.current.playInputClick()
+        self.textField.insertText("-")
     }
 }
 
@@ -63,36 +95,31 @@ extension HostViewController: KeyboardViewDelegate {
         UIDevice.current.playInputClick()
         if isShifted {
             self.textField.insertText(newCharacter.uppercased())
-            self.digiKeyboardView.shiftButton.isSelected = !isShifted
+            self.keyboardView.shiftButton.isSelected = !isShifted
         } else {
             self.textField.insertText(newCharacter)
         }
         let image = UIImage(imageLiteralResourceName: "eng_dark_\(newCharacter)")
         let imageView = UIImageView(image: image)
         imageView.contentMode = .scaleAspectFit
-        self.digiCodeStackView.addArrangedSubview(imageView)
+        self.codeStackView.addArrangedSubview(imageView)
     }
     func didTouchUpBackspaceKey() {
         UIDevice.current.playInputClick()
         self.textField.deleteBackward()
-        guard let lastSubview = self.digiCodeStackView.arrangedSubviews.last else { return }
+        guard let lastSubview = self.codeStackView.arrangedSubviews.last else { return }
         lastSubview.removeFromSuperview()
     }
     func didTouchUpSpaceKey() {
         UIDevice.current.playInputClick()
         self.textField.insertText(" ")
-        for view in self.digiCodeStackView.arrangedSubviews {
+        for view in self.codeStackView.arrangedSubviews {
             view.removeFromSuperview()
         }
     }
     func didTouchUpShiftKey(_ sender: KeyboardButton) {
         UIDevice.current.playInputClick()
         sender.isSelected = !sender.isSelected
-//        if sender.isSelected {
-//            sender.backgroundColor = #colorLiteral(red: 0.6823529412, green: 0.7019607843, blue: 0.7450980392, alpha: 1)
-//        } else {
-//            sender.backgroundColor = .white
-//        }
     }
     func didTouchUpDotKey() {
         UIDevice.current.playInputClick()
@@ -117,10 +144,10 @@ private extension HostViewController {
     func instantiateKeyboardView() {
         guard let keyboardView = UINib(nibName: "EnglishKeyboardView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? EnglishKeyboardView else { return }
         keyboardView.delegate = self
-        self.digiKeyboardView = keyboardView
+        self.keyboardView = keyboardView
     }
     func makeKeyboardViewAsInputView() {
-        self.textField.inputView = self.digiKeyboardView
+        self.textField.inputView = self.keyboardView
     }
     func makePreview() -> UIToolbar {
         let accessoryView = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40))
@@ -128,21 +155,21 @@ private extension HostViewController {
         return accessoryView
     }
     func makePreviewStackView() {
-        self.digiCodeStackView = UIStackView(frame: .zero)
-        self.digiCodeStackView.backgroundColor = colors.accessoryPreviewBackgroundColor
-        self.digiCodeStackView.spacing = 2
+        self.codeStackView = UIStackView(frame: .zero)
+        self.codeStackView.backgroundColor = colors.accessoryPreviewBackgroundColor
+        self.codeStackView.spacing = 2
     }
     func attachStackView(_ stackView: UIStackView, to accessoryView: UIToolbar) {
         accessoryView.addSubview(stackView)
-        self.digiCodeStackView.translatesAutoresizingMaskIntoConstraints = false
+        self.codeStackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            digiCodeStackView.leftAnchor.constraint(greaterThanOrEqualTo: accessoryView.leftAnchor, constant: 16),
-            digiCodeStackView.topAnchor.constraint(equalTo: accessoryView.topAnchor, constant: 8),
-            digiCodeStackView.rightAnchor.constraint(lessThanOrEqualTo: accessoryView.rightAnchor, constant: -16),
-            digiCodeStackView.bottomAnchor.constraint(equalTo: accessoryView.bottomAnchor, constant: -8),
-            digiCodeStackView.centerXAnchor.constraint(equalTo: accessoryView.centerXAnchor)
+            codeStackView.leftAnchor.constraint(greaterThanOrEqualTo: accessoryView.leftAnchor, constant: 16),
+            codeStackView.topAnchor.constraint(equalTo: accessoryView.topAnchor, constant: 8),
+            codeStackView.rightAnchor.constraint(lessThanOrEqualTo: accessoryView.rightAnchor, constant: -16),
+            codeStackView.bottomAnchor.constraint(equalTo: accessoryView.bottomAnchor, constant: -8),
+            codeStackView.centerXAnchor.constraint(equalTo: accessoryView.centerXAnchor)
             ])
-        digiCodeStackView.distribution = .fillEqually
+        codeStackView.distribution = .fillEqually
         
     }
     func makePreviewAsInputViewAccessoryView(_ accessoryView: UIToolbar) {
