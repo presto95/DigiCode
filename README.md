@@ -1,4 +1,2 @@
 # DigiKey
-디지코드 키보드
-
-iOS Custom Keyboard 연습
+디지코드 (디지몬 문자) 키보드
