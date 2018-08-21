@@ -8,22 +8,22 @@
 
 import UIKit
 
-class EnglishKeyboardView: UIView {
+class MainKeyboardView: UIView {
 
     weak var delegate: KeyboardViewDelegate?
     var colors: Colors!
-    @IBOutlet weak var oneTwoThreeButton: KeyboardButton!
+    @IBOutlet weak var numberButton: KeyboardButton!
     @IBOutlet weak var globeButton: KeyboardButton!
     @IBOutlet weak var enterButton: KeyboardButton!
     @IBOutlet weak var dotButton: KeyboardButton!
     @IBOutlet weak var shiftButton: KeyboardButton!
     @IBOutlet weak var backspaceButton: KeyboardButton!
     @IBOutlet weak var spaceButton: KeyboardButton!
-    @IBOutlet weak var firstLineStackView: UIStackView!
-    @IBOutlet weak var secondLineStackView: UIStackView!
-    @IBOutlet weak var thirdLineStackView: UIStackView!
-    @IBOutlet weak var secondLineStackViewLeadingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var secondLineStackViewTrailingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var firstStackView: UIStackView!
+    @IBOutlet weak var secondStackView: UIStackView!
+    @IBOutlet weak var thirdStackView: UIStackView!
+    @IBOutlet weak var secondStackViewLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var secondStackViewTrailingConstraint: NSLayoutConstraint!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -42,13 +42,14 @@ class EnglishKeyboardView: UIView {
     }
     
     override func layoutSubviews() {
+        super.layoutSubviews()
         setColorScheme(.light)
         setupKeys(.english)
     }
     
     ///문자 키들에 액션 추가하기
     private func addTargetToCharacterKeys() {
-        let stackViews = [firstLineStackView, secondLineStackView, thirdLineStackView]
+        let stackViews = [firstStackView, secondStackView, thirdStackView]
         for stackView in stackViews {
             guard let stackView = stackView else { return }
             for view in stackView.arrangedSubviews {
@@ -60,14 +61,14 @@ class EnglishKeyboardView: UIView {
 }
 
 //MARK:- 키보드 키 클릭 액션 관련
-extension EnglishKeyboardView {
+extension MainKeyboardView {
     @objc func touchUpCharacterKeys(_ sender: KeyboardButton) {
         delegate?.didTouchUpCharacterKey(sender.character ?? "")
     }
-    @IBAction func touchUpBackspaceKey(_ sender: KeyboardButton) {
+    @IBAction func touchUpBackspaceKey() {
         delegate?.didTouchUpBackspaceKey()
     }
-    @IBAction func touchUpSpaceKey(_ sender: KeyboardButton) {
+    @IBAction func touchUpSpaceKey() {
         delegate?.didTouchUpSpaceKey()
     }
     @IBAction func touchUpShiftKey(_ sender: KeyboardButton) {
@@ -82,17 +83,17 @@ extension EnglishKeyboardView {
     @IBAction func touchUpEnterKey() {
         delegate?.didTouchUpEnterKey()
     }
-    @IBAction func touchUpOneTwoThreeKey() {
-        delegate?.didTouchUpOneTwoThreeKey()
+    @IBAction func touchUpKeyboardChangeKey() {
+        delegate?.didTouchUpKeyboardChangeKey()
     }
 }
 
 //MARK:- 키보드 색 설정 관련
-extension EnglishKeyboardView {
+extension MainKeyboardView {
     private func setColorScheme(_ colorScheme: ColorType) {
         self.colors = Colors(colorScheme: colorScheme)
         self.backgroundColor = colors.keyboardBackgroundColor
-        changeButtonColors(in: [firstLineStackView, secondLineStackView, thirdLineStackView])
+        changeButtonColors(in: [firstStackView, secondStackView, thirdStackView])
         
     }
     
@@ -109,7 +110,7 @@ extension EnglishKeyboardView {
 }
 
 //MARK:- 키보드 키 설정 관련
-extension EnglishKeyboardView {
+extension MainKeyboardView {
     ///키보드 언어에 따라 키에 표시되는 문자를 다르게 함
     private func setupKeys(_ language: KeyboardLanguage) {
         switch language {
@@ -121,7 +122,7 @@ extension EnglishKeyboardView {
             changeShiftTitleToDigiCode()
             changeBackspaceTitleToDigiCode()
             changeSpaceTitleToDigiCode()
-            changeCharacterKeysToDigiCode(in: [firstLineStackView, secondLineStackView, thirdLineStackView])
+            changeCharacterKeysToDigiCode(in: [firstStackView, secondStackView, thirdStackView])
         case .japanese:
             break
         }
@@ -139,8 +140,8 @@ extension EnglishKeyboardView {
     }
     
     private func changeOneTwoThreeTitleToDigiCode() {
-        self.oneTwoThreeButton.setImage(#imageLiteral(resourceName: "dark_oneTwoThree"), for: [])
-        self.oneTwoThreeButton.tintColor = colors.tintColor
+        self.numberButton.setImage(#imageLiteral(resourceName: "dark_oneTwoThree"), for: [])
+        self.numberButton.tintColor = colors.tintColor
     }
     
     private func changeEnterTitleToDigiCode() {
@@ -188,7 +189,7 @@ extension EnglishKeyboardView {
 }
 
 //MARK:- 키보드 키 입력 시 소리나게 하기
-extension EnglishKeyboardView: UIInputViewAudioFeedback {
+extension MainKeyboardView: UIInputViewAudioFeedback {
     var enableInputClicksWhenVisible: Bool {
         return true
     }

@@ -13,10 +13,19 @@ class HostViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     let colors = Colors(colorScheme: .light)
-    var keyboardView: EnglishKeyboardView!
+    var parentKeyboardView: UIView!
+    var mainKeyboardView: MainKeyboardView {
+        return parentKeyboardView as! MainKeyboardView
+    }
+    var numberKeyboardView: NumberKeyboardView {
+        return parentKeyboardView as! NumberKeyboardView
+    }
+    var symbolKeyboardView: SymbolKeyboardView {
+        return parentKeyboardView as! SymbolKeyboardView
+    }
     var codeStackView: UIStackView!
     var isShifted: Bool {
-        return keyboardView.shiftButton.isSelected
+        return mainKeyboardView.shiftButton.isSelected
     }
     var language: KeyboardLanguage {
         if segmentedControl.selectedSegmentIndex == 0 {
@@ -47,19 +56,20 @@ class HostViewController: UIViewController {
 extension HostViewController {
     @IBAction func selectSegmentedControl(_ sender: UISegmentedControl) {
         //키보드 언어 바꾸기
-        let count = keyboardView.secondLineStackView.arrangedSubviews.count
+        guard let keyboardView = parentKeyboardView as? MainKeyboardView else { return }
+        let count = keyboardView.secondStackView.arrangedSubviews.count
         let index = sender.selectedSegmentIndex
-        guard let stackView = keyboardView.secondLineStackView else { return }
+        guard let stackView = keyboardView.secondStackView else { return }
         if index == 0 && count == 10 {
-            guard let firstOfFirstStackView = keyboardView.firstLineStackView.arrangedSubviews.first else { return }
-            guard let lastOfFirstStackView = keyboardView.firstLineStackView.arrangedSubviews.last else { return }
+            guard let firstOfFirstStackView = keyboardView.firstStackView.arrangedSubviews.first else { return }
+            guard let lastOfFirstStackView = keyboardView.firstStackView.arrangedSubviews.last else { return }
             stackView.arrangedSubviews.last?.removeFromSuperview()
-            keyboardView.secondLineStackViewLeadingConstraint.isActive = false
-            keyboardView.secondLineStackViewTrailingConstraint.isActive = false
-            keyboardView.secondLineStackViewLeadingConstraint = stackView.leadingAnchor.constraint(equalTo: firstOfFirstStackView.centerXAnchor)
-            keyboardView.secondLineStackViewTrailingConstraint = stackView.trailingAnchor.constraint(equalTo: lastOfFirstStackView.centerXAnchor)
-            keyboardView.secondLineStackViewLeadingConstraint.isActive = true
-            keyboardView.secondLineStackViewTrailingConstraint.isActive = true
+            keyboardView.secondStackViewLeadingConstraint.isActive = false
+            keyboardView.secondStackViewTrailingConstraint.isActive = false
+            keyboardView.secondStackViewLeadingConstraint = stackView.leadingAnchor.constraint(equalTo: firstOfFirstStackView.centerXAnchor)
+            keyboardView.secondStackViewTrailingConstraint = stackView.trailingAnchor.constraint(equalTo: lastOfFirstStackView.centerXAnchor)
+            keyboardView.secondStackViewLeadingConstraint.isActive = true
+            keyboardView.secondStackViewTrailingConstraint.isActive = true
         } else if index == 1 && count == 9 {
             let button = KeyboardButton(type: .system)
             button.character = "ー"
@@ -67,12 +77,12 @@ extension HostViewController {
             button.setImage(#imageLiteral(resourceName: "jpn_dark_dash"), for: [])
             button.addTarget(self, action: #selector(touchUpDashButton), for: [.touchUpInside, .touchUpOutside])
             stackView.addArrangedSubview(button)
-            keyboardView.secondLineStackViewLeadingConstraint.isActive = false
-            keyboardView.secondLineStackViewTrailingConstraint.isActive = false
-            keyboardView.secondLineStackViewLeadingConstraint = stackView.leadingAnchor.constraint(equalTo: keyboardView.leadingAnchor, constant: 4)
-            keyboardView.secondLineStackViewTrailingConstraint = stackView.trailingAnchor.constraint(equalTo: keyboardView.trailingAnchor, constant: -4)
-            keyboardView.secondLineStackViewLeadingConstraint.isActive = true
-            keyboardView.secondLineStackViewTrailingConstraint.isActive = true
+            keyboardView.secondStackViewLeadingConstraint.isActive = false
+            keyboardView.secondStackViewTrailingConstraint.isActive = false
+            keyboardView.secondStackViewLeadingConstraint = stackView.leadingAnchor.constraint(equalTo: keyboardView.leadingAnchor, constant: 4)
+            keyboardView.secondStackViewTrailingConstraint = stackView.trailingAnchor.constraint(equalTo: keyboardView.trailingAnchor, constant: -4)
+            keyboardView.secondStackViewLeadingConstraint.isActive = true
+            keyboardView.secondStackViewTrailingConstraint.isActive = true
             keyboardView.layoutIfNeeded()
         }
     }
@@ -91,18 +101,26 @@ extension HostViewController {
 
 //MARK:- 키보드 키 입력 델리게이트
 extension HostViewController: KeyboardViewDelegate {
+    func didTouchUpSymbolKey() {
+        
+    }
     func didTouchUpCharacterKey(_ newCharacter: String) {
         UIDevice.current.playInputClick()
-        if isShifted {
-            self.textField.insertText(newCharacter.uppercased())
-            self.keyboardView.shiftButton.isSelected = !isShifted
+        if parentKeyboardView is MainKeyboardView {
+            if isShifted {
+                self.textField.insertText(newCharacter.uppercased())
+                self.mainKeyboardView.shiftButton.isSelected = !isShifted
+            } else {
+                self.textField.insertText(newCharacter)
+            }
+            let image = UIImage(imageLiteralResourceName: "eng_dark_\(newCharacter)")
+            let imageView = UIImageView(image: image)
+            imageView.contentMode = .scaleAspectFit
+            self.codeStackView.addArrangedSubview(imageView)
         } else {
             self.textField.insertText(newCharacter)
         }
-        let image = UIImage(imageLiteralResourceName: "eng_dark_\(newCharacter)")
-        let imageView = UIImageView(image: image)
-        imageView.contentMode = .scaleAspectFit
-        self.codeStackView.addArrangedSubview(imageView)
+        
     }
     func didTouchUpBackspaceKey() {
         UIDevice.current.playInputClick()
@@ -131,8 +149,27 @@ extension HostViewController: KeyboardViewDelegate {
     func didTouchUpEnterKey() {
         UIDevice.current.playInputClick()
     }
-    func didTouchUpOneTwoThreeKey() {
+    func didTouchUpKeyboardChangeKey() {
         UIDevice.current.playInputClick()
+        switch parentKeyboardView {
+        case is MainKeyboardView:
+            guard let keyboardView = UINib(nibName: "NumberKeyboardView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? NumberKeyboardView else { return }
+            keyboardView.delegate = self
+            self.parentKeyboardView = keyboardView
+            self.textField.inputView = self.parentKeyboardView
+            self.textField.reloadInputViews()
+        case is NumberKeyboardView:
+            guard let keyboardView = UINib(nibName: "MainKeyboardView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? MainKeyboardView else { return }
+            keyboardView.delegate = self
+            self.parentKeyboardView = keyboardView
+            self.textField.inputView = self.parentKeyboardView
+            self.textField.reloadInputViews()
+            //악세사리뷰 추가
+        case is SymbolKeyboardView:
+            break
+        default:
+            break
+        }
     }
     func characterBeforeCursor() -> String? {
         return nil
@@ -142,12 +179,12 @@ extension HostViewController: KeyboardViewDelegate {
 //MARK:- private methods
 private extension HostViewController {
     func instantiateKeyboardView() {
-        guard let keyboardView = UINib(nibName: "EnglishKeyboardView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? EnglishKeyboardView else { return }
+        guard let keyboardView = UINib(nibName: "MainKeyboardView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? MainKeyboardView else { return }
         keyboardView.delegate = self
-        self.keyboardView = keyboardView
+        self.parentKeyboardView = keyboardView
     }
     func makeKeyboardViewAsInputView() {
-        self.textField.inputView = self.keyboardView
+        self.textField.inputView = self.parentKeyboardView
     }
     func makePreview() -> UIToolbar {
         let accessoryView = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40))

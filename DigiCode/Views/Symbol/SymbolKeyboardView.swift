@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SymbolsKeyboardView: UIView {
+class SymbolKeyboardView: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.

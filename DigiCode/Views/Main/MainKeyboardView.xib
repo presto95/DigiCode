@@ -14,7 +14,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EnglishKeyboardView" customModule="DigiCode" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MainKeyboardView" customModule="DigiCode" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -173,7 +173,7 @@
                     </constraints>
                     <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                     <connections>
-                        <action selector="touchUpBackspaceKey:" destination="iN0-l3-epB" eventType="touchUpInside" id="8IM-cE-8Eg"/>
+                        <action selector="touchUpBackspaceKey" destination="iN0-l3-epB" eventType="touchUpInside" id="ERI-ou-KPp"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQF-Rr-9vl" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
@@ -189,7 +189,7 @@
                     <rect key="frame" x="95" y="178" width="184.5" height="38"/>
                     <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                     <connections>
-                        <action selector="touchUpSpaceKey:" destination="iN0-l3-epB" eventType="touchUpInside" id="TWJ-4O-xKC"/>
+                        <action selector="touchUpSpaceKey" destination="iN0-l3-epB" eventType="touchUpInside" id="n73-fb-Ls6"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHc-pm-svW" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
@@ -210,7 +210,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJc-YJ-M8Z" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
                     <rect key="frame" x="4" y="178" width="41.5" height="38"/>
                     <connections>
-                        <action selector="touchUpOneTwoThreeKey" destination="iN0-l3-epB" eventType="touchUpInside" id="NIJ-dy-Vzj"/>
+                        <action selector="touchUpKeyboardChangeKey" destination="iN0-l3-epB" eventType="touchUpInside" id="NIJ-dy-Vzj"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k1-QL-gdM" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
@@ -266,15 +266,15 @@
                 <outlet property="backspaceButton" destination="iFT-4q-cDn" id="c64-wp-HmM"/>
                 <outlet property="dotButton" destination="oHc-pm-svW" id="EAR-si-gZb"/>
                 <outlet property="enterButton" destination="Umr-rU-nXK" id="MhL-w9-jYH"/>
-                <outlet property="firstLineStackView" destination="EqG-48-0HU" id="yHc-kd-Qr6"/>
+                <outlet property="firstStackView" destination="EqG-48-0HU" id="yHc-kd-Qr6"/>
                 <outlet property="globeButton" destination="4k1-QL-gdM" id="3AB-Xi-yyi"/>
-                <outlet property="oneTwoThreeButton" destination="oJc-YJ-M8Z" id="upB-tF-Qie"/>
-                <outlet property="secondLineStackView" destination="O2t-Uu-H4E" id="4qU-E0-F9P"/>
-                <outlet property="secondLineStackViewLeadingConstraint" destination="HaP-uW-AsD" id="MsE-8S-R14"/>
-                <outlet property="secondLineStackViewTrailingConstraint" destination="UAE-dj-RQq" id="C7A-Ew-0eV"/>
+                <outlet property="numberButton" destination="oJc-YJ-M8Z" id="upB-tF-Qie"/>
+                <outlet property="secondStackView" destination="O2t-Uu-H4E" id="4qU-E0-F9P"/>
+                <outlet property="secondStackViewLeadingConstraint" destination="HaP-uW-AsD" id="MsE-8S-R14"/>
+                <outlet property="secondStackViewTrailingConstraint" destination="UAE-dj-RQq" id="C7A-Ew-0eV"/>
                 <outlet property="shiftButton" destination="lQF-Rr-9vl" id="I83-fL-qk0"/>
                 <outlet property="spaceButton" destination="Dg4-i7-q9x" id="u8x-SH-Ecr"/>
-                <outlet property="thirdLineStackView" destination="DRQ-fY-IdB" id="gTd-fq-nn2"/>
+                <outlet property="thirdStackView" destination="DRQ-fY-IdB" id="gTd-fq-nn2"/>
             </connections>
             <point key="canvasLocation" x="239.5" y="-17"/>
         </view>

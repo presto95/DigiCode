@@ -27,7 +27,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digicode" translatesAutoresizingMaskIntoConstraints="NO" id="NB6-EF-x3U">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="jAe-zj-f0b"/>
+                                                    <constraint firstAttribute="height" constant="100" id="trp-CV-gEP"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WEA-B8-thh">
@@ -87,7 +87,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digikeyboard" translatesAutoresizingMaskIntoConstraints="NO" id="wM9-lq-9Wy">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="L0W-MN-FAc"/>
+                                                    <constraint firstAttribute="height" constant="100" id="nqp-yc-k3r"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mN7-ni-wso">

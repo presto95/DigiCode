@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pixel Digivolve.otf">
+            <string>PixelDigivolve</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YDs-PC-tCN" customClass="NumberKeyboardView" customModule="DigiCode" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ghr-Fp-puM">
+                    <rect key="frame" x="4" y="16" width="367" height="38"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAx-C4-WIb" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="1"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9z-XD-d3g" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="37" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="2"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78O-Zt-KPd" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="74" y="0.0" width="33.5" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="3"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRD-fF-ehU" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="111.5" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="4"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koF-KH-ejM" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="148.5" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="5"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGI-TD-PXQ" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="185.5" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="6"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iG-iT-9Na" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="222.5" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="7"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kt-PN-EmL" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="259.5" y="0.0" width="33.5" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="8"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZC-N9-u2N" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="297" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="9"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mR-E8-UI0" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="334" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="0"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="hzQ-ZR-bVo"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Kje-Bb-CUi">
+                    <rect key="frame" x="4" y="70" width="367" height="38"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYJ-3U-PRB" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="-"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoZ-Ut-h6f" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="37" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="/"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcS-dT-tBo" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="74" y="0.0" width="33.5" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title=":"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94b-Qy-CvS" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="111.5" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title=";"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HII-M2-UUO" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="148.5" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="("/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KT8-Gb-GsS" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="185.5" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title=")"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOS-SF-evl" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="222.5" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="$"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBm-E0-S33" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="259.5" y="0.0" width="33.5" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="&amp;"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUr-Zt-uX7" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="297" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="@"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNK-od-n0I" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="334" y="0.0" width="33" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <state key="normal" title="&quot;"/>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zCZ-HW-s2x">
+                    <rect key="frame" x="57.5" y="124" width="260" height="38"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AtT-fg-fy4" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="49" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="."/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LI2-TY-2WK" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="53" y="0.0" width="48.5" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title=","/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYG-cc-21O" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="105.5" y="0.0" width="49" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="?"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdZ-Ny-964" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="158.5" y="0.0" width="48.5" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="!"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXe-de-ae8" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                            <rect key="frame" x="211" y="0.0" width="49" height="38"/>
+                            <fontDescription key="fontDescription" name="PixelDigivolve" family="Pixel Digivolve" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" title="'"/>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9I-92-BA4" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                    <rect key="frame" x="333" y="124" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="P9I-92-BA4" secondAttribute="height" multiplier="1:1" id="PF7-fG-HB1"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                    <connections>
+                        <action selector="touchUpBackspaceKey" destination="YDs-PC-tCN" eventType="touchUpInside" id="x5t-hR-Ijg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNc-Dc-F7j" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                    <rect key="frame" x="4" y="124" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TNc-Dc-F7j" secondAttribute="height" multiplier="1:1" id="4Zo-1M-izU"/>
+                    </constraints>
+                    <connections>
+                        <action selector="touchUpSymbolKey:" destination="YDs-PC-tCN" eventType="touchUpInside" id="Jqg-E2-7z7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myo-vw-Zvn" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                    <rect key="frame" x="110.5" y="178" width="154" height="38"/>
+                    <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                    <connections>
+                        <action selector="touchUpSpaceKey" destination="YDs-PC-tCN" eventType="touchUpInside" id="XZA-Ko-kOg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mN2-s3-amU" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                    <rect key="frame" x="268.5" y="178" width="49.5" height="38"/>
+                    <connections>
+                        <action selector="touchUpDotKey" destination="YDs-PC-tCN" eventType="touchUpInside" id="2LW-Pe-9e9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4h7-ST-8d4" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                    <rect key="frame" x="322" y="178" width="49" height="38"/>
+                    <connections>
+                        <action selector="toucUpEnterKey" destination="YDs-PC-tCN" eventType="touchUpInside" id="Ydh-fT-wCT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Oi-cH-UL2" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                    <rect key="frame" x="4" y="178" width="49" height="38"/>
+                    <connections>
+                        <action selector="touchUpKeyboardChangeKey" destination="YDs-PC-tCN" eventType="touchUpInside" id="wV9-Hn-e5K"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzV-iT-nJa" customClass="KeyboardButton" customModule="DigiCode" customModuleProvider="target">
+                    <rect key="frame" x="57" y="178" width="49.5" height="38"/>
+                    <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                    <connections>
+                        <action selector="touchUpGlobeKey" destination="YDs-PC-tCN" eventType="touchUpInside" id="OAV-5C-7VT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="JzV-iT-nJa" firstAttribute="top" secondItem="myo-vw-Zvn" secondAttribute="top" id="1pQ-YD-1oI"/>
+                <constraint firstItem="myo-vw-Zvn" firstAttribute="height" secondItem="ghr-Fp-puM" secondAttribute="height" id="3Sg-Md-Roq"/>
+                <constraint firstItem="mN2-s3-amU" firstAttribute="bottom" secondItem="myo-vw-Zvn" secondAttribute="bottom" id="43c-dN-LJ6"/>
+                <constraint firstItem="myo-vw-Zvn" firstAttribute="top" secondItem="zCZ-HW-s2x" secondAttribute="bottom" constant="16" id="4a7-Ly-vel"/>
+                <constraint firstItem="JzV-iT-nJa" firstAttribute="trailing" secondItem="AtT-fg-fy4" secondAttribute="trailing" id="4rh-2d-3b4"/>
+                <constraint firstItem="hKD-qK-w2x" firstAttribute="trailing" secondItem="ghr-Fp-puM" secondAttribute="trailing" constant="4" id="5dq-hN-lB3"/>
+                <constraint firstItem="5Oi-cH-UL2" firstAttribute="top" secondItem="myo-vw-Zvn" secondAttribute="top" id="6Rc-qg-ObB"/>
+                <constraint firstItem="4h7-ST-8d4" firstAttribute="bottom" secondItem="myo-vw-Zvn" secondAttribute="bottom" id="9ve-mI-k9b"/>
+                <constraint firstItem="JzV-iT-nJa" firstAttribute="width" secondItem="5Oi-cH-UL2" secondAttribute="width" id="Bjz-Rp-CVi"/>
+                <constraint firstItem="Kje-Bb-CUi" firstAttribute="height" secondItem="ghr-Fp-puM" secondAttribute="height" id="DWH-NS-7RD"/>
+                <constraint firstItem="JzV-iT-nJa" firstAttribute="leading" secondItem="5Oi-cH-UL2" secondAttribute="trailing" constant="4" id="Dzz-Y2-Go2"/>
+                <constraint firstItem="myo-vw-Zvn" firstAttribute="leading" secondItem="LI2-TY-2WK" secondAttribute="leading" id="Esj-jb-lRM"/>
+                <constraint firstItem="hKD-qK-w2x" firstAttribute="trailing" secondItem="P9I-92-BA4" secondAttribute="trailing" constant="4" id="GWS-DW-tNR"/>
+                <constraint firstItem="zCZ-HW-s2x" firstAttribute="height" secondItem="ghr-Fp-puM" secondAttribute="height" id="L6k-yT-Wvc"/>
+                <constraint firstItem="zCZ-HW-s2x" firstAttribute="trailing" secondItem="1ZC-N9-u2N" secondAttribute="centerX" id="N5z-S7-tQN"/>
+                <constraint firstItem="TNc-Dc-F7j" firstAttribute="bottom" secondItem="zCZ-HW-s2x" secondAttribute="bottom" id="OKa-rr-w0C"/>
+                <constraint firstItem="ghr-Fp-puM" firstAttribute="leading" secondItem="hKD-qK-w2x" secondAttribute="leading" constant="4" id="Rwd-wE-aTn"/>
+                <constraint firstItem="ghr-Fp-puM" firstAttribute="top" secondItem="hKD-qK-w2x" secondAttribute="top" constant="16" id="S48-AY-FCh"/>
+                <constraint firstItem="P9I-92-BA4" firstAttribute="height" secondItem="ghr-Fp-puM" secondAttribute="height" id="UKE-jd-JIi"/>
+                <constraint firstItem="mN2-s3-amU" firstAttribute="top" secondItem="myo-vw-Zvn" secondAttribute="top" id="VwR-al-9xo"/>
+                <constraint firstItem="4h7-ST-8d4" firstAttribute="leading" secondItem="mN2-s3-amU" secondAttribute="trailing" constant="4" id="Xyh-p6-ObX"/>
+                <constraint firstItem="P9I-92-BA4" firstAttribute="bottom" secondItem="zCZ-HW-s2x" secondAttribute="bottom" id="a5r-uK-1V9"/>
+                <constraint firstItem="4h7-ST-8d4" firstAttribute="top" secondItem="myo-vw-Zvn" secondAttribute="top" id="blv-bn-LoA"/>
+                <constraint firstItem="JzV-iT-nJa" firstAttribute="bottom" secondItem="myo-vw-Zvn" secondAttribute="bottom" id="ewe-VH-mhD"/>
+                <constraint firstItem="4h7-ST-8d4" firstAttribute="width" secondItem="mN2-s3-amU" secondAttribute="width" id="fNA-rz-kRk"/>
+                <constraint firstItem="zCZ-HW-s2x" firstAttribute="top" secondItem="Kje-Bb-CUi" secondAttribute="bottom" constant="16" id="ils-qM-lp8"/>
+                <constraint firstItem="Kje-Bb-CUi" firstAttribute="trailing" secondItem="2mR-E8-UI0" secondAttribute="trailing" id="mpe-od-Tr9"/>
+                <constraint firstItem="Kje-Bb-CUi" firstAttribute="top" secondItem="ghr-Fp-puM" secondAttribute="bottom" constant="16" id="r6a-iR-uzR"/>
+                <constraint firstItem="TNc-Dc-F7j" firstAttribute="leading" secondItem="hKD-qK-w2x" secondAttribute="leading" constant="4" id="tWI-wD-qlC"/>
+                <constraint firstItem="5Oi-cH-UL2" firstAttribute="leading" secondItem="hKD-qK-w2x" secondAttribute="leading" constant="4" id="tl1-Sq-DYa"/>
+                <constraint firstItem="TNc-Dc-F7j" firstAttribute="height" secondItem="ghr-Fp-puM" secondAttribute="height" id="tls-8x-VtN"/>
+                <constraint firstItem="mN2-s3-amU" firstAttribute="leading" secondItem="rXe-de-ae8" secondAttribute="leading" id="uTL-KM-gMk"/>
+                <constraint firstItem="myo-vw-Zvn" firstAttribute="trailing" secondItem="CdZ-Ny-964" secondAttribute="trailing" id="ulQ-Zr-rGv"/>
+                <constraint firstItem="hKD-qK-w2x" firstAttribute="trailing" secondItem="4h7-ST-8d4" secondAttribute="trailing" constant="4" id="vAR-Qf-D0u"/>
+                <constraint firstItem="5Oi-cH-UL2" firstAttribute="bottom" secondItem="myo-vw-Zvn" secondAttribute="bottom" id="z04-GM-VLu"/>
+                <constraint firstItem="zCZ-HW-s2x" firstAttribute="leading" secondItem="d9z-XD-d3g" secondAttribute="centerX" id="zxo-Og-TT7"/>
+                <constraint firstItem="Kje-Bb-CUi" firstAttribute="leading" secondItem="oAx-C4-WIb" secondAttribute="leading" id="zxp-e6-lfj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="hKD-qK-w2x"/>
+            <connections>
+                <outlet property="backspaceButton" destination="P9I-92-BA4" id="KRg-ky-v2D"/>
+                <outlet property="dotButton" destination="mN2-s3-amU" id="LTC-LI-DYG"/>
+                <outlet property="enterButton" destination="4h7-ST-8d4" id="Fno-6u-3V9"/>
+                <outlet property="firstStackView" destination="ghr-Fp-puM" id="JVK-vf-SeO"/>
+                <outlet property="globeButton" destination="JzV-iT-nJa" id="az9-35-0bp"/>
+                <outlet property="mainButton" destination="5Oi-cH-UL2" id="jAi-XY-mIq"/>
+                <outlet property="secondStackView" destination="Kje-Bb-CUi" id="aOA-Ww-hLZ"/>
+                <outlet property="spaceButton" destination="myo-vw-Zvn" id="ejy-25-Nlb"/>
+                <outlet property="symbolButton" destination="TNc-Dc-F7j" id="qqU-VT-5ll"/>
+                <outlet property="thirdStackView" destination="zCZ-HW-s2x" id="3wY-dK-Oba"/>
+            </connections>
+            <point key="canvasLocation" x="239.5" y="-17"/>
+        </view>
+    </objects>
+</document>

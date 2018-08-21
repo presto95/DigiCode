@@ -12,31 +12,31 @@ class KeyboardViewController: UIInputViewController {
     
     var keyboardParentView: UIView!
     var colors: Colors!
-    var englishKeyboardView: EnglishKeyboardView {
-        return keyboardParentView as! EnglishKeyboardView
+    var mainKeyboardView: MainKeyboardView {
+        return keyboardParentView as! MainKeyboardView
     }
-    var japaneseKeyboardView: JapaneseKeyboardView {
-        return keyboardParentView as! JapaneseKeyboardView
+    var numberKeyboardView: NumberKeyboardView {
+        return keyboardParentView as! NumberKeyboardView
     }
-    var numbersKeyboardView: NumbersKeyboardView {
-        return keyboardParentView as! NumbersKeyboardView
-    }
-    var symbolsKeyboardView: SymbolsKeyboardView {
-        return keyboardParentView as! SymbolsKeyboardView
+    var symbolKeyboardView: SymbolKeyboardView {
+        return keyboardParentView as! SymbolKeyboardView
     }
     var digiCodeStackView: UIStackView!
-    override var inputAccessoryView: UIView? {
-        get {
-            return self.inputAccessoryView
-        }
-        set {
-            self.inputAccessoryView = newValue
-        }
-    }
+    
+//    override var inputAccessoryView: UIView? {
+//        get {
+//            return self.inputAccessoryView
+//        }
+//        set {
+//            self.inputAccessoryView = newValue
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let keyboardView = UINib(nibName: "EnglishKeyboardView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? EnglishKeyboardView else { return }
+        self.colors = Colors(colorScheme: .light)
+        
+        guard let keyboardView = UINib(nibName: "MainKeyboardView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? MainKeyboardView else { return }
         keyboardView.delegate = self
         keyboardView.globeButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
         guard let inputView = inputView else { return }
@@ -49,14 +49,14 @@ class KeyboardViewController: UIInputViewController {
             keyboardView.bottomAnchor.constraint(equalTo: inputView.bottomAnchor)
             ])
         
-        self.colors = Colors(colorScheme: .light)
+        
         let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40))
         toolBar.backgroundColor = colors.accessoryBackgroundColor
-        digiCodeStackView = UIStackView(arrangedSubviews: [])
-        digiCodeStackView.backgroundColor = colors.accessoryPreviewBackgroundColor
+        self.digiCodeStackView = UIStackView(arrangedSubviews: [])
+        self.digiCodeStackView.backgroundColor = colors.accessoryPreviewBackgroundColor
         self.digiCodeStackView.spacing = 2
         toolBar.addSubview(digiCodeStackView)
-        digiCodeStackView.translatesAutoresizingMaskIntoConstraints = false
+        self.digiCodeStackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             digiCodeStackView.leftAnchor.constraint(greaterThanOrEqualTo: toolBar.leftAnchor, constant: 16),
             digiCodeStackView.topAnchor.constraint(equalTo: toolBar.topAnchor, constant: 8),
@@ -65,7 +65,7 @@ class KeyboardViewController: UIInputViewController {
             digiCodeStackView.centerXAnchor.constraint(equalTo: toolBar.centerXAnchor)
             ])
         digiCodeStackView.distribution = .fillEqually
-        self.inputAccessoryView = toolBar
+//        self.inputAccessoryView = toolBar
         
         self.keyboardParentView = keyboardView
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow), name: .UIKeyboardDidShow, object: nil)
@@ -104,6 +104,9 @@ class KeyboardViewController: UIInputViewController {
 }
 
 extension KeyboardViewController: KeyboardViewDelegate {
+    func didTouchUpSymbolKey() {
+        
+    }
     func didTouchUpCharacterKey(_ newCharacter: String) {
         textDocumentProxy.insertText(newCharacter)
     }
@@ -132,7 +135,7 @@ extension KeyboardViewController: KeyboardViewDelegate {
         self.dismissKeyboard()
     }
     
-    func didTouchUpOneTwoThreeKey() {
+    func didTouchUpKeyboardChangeKey() {
         
     }
     

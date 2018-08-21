@@ -13,16 +13,18 @@ protocol KeyboardViewDelegate: class {
     func didTouchUpBackspaceKey()
     ///스페이스 키 입력 시 수행할 동작 정의
     func didTouchUpSpaceKey()
-    //쉬프트 키 입력 시 수행할 동작 정의
+    ///쉬프트 키 입력 시 수행할 동작 정의
     func didTouchUpShiftKey(_ sender: KeyboardButton)
+    ///숫자 -> 심볼 전환 키 입력 시 수행할 동작 정의
+    func didTouchUpSymbolKey()
     ///마침표 키 입력 시 수행할 동작 정의
     func didTouchUpDotKey()
     ///지구본 키 입력 시 수행할 동작 정의
     func didTouchUpGlobeKey()
     ///엔터 키 입력 시 수행할 동작 정의
     func didTouchUpEnterKey()
-    ///123 키 입력 시 수행할 동작 정의
-    func didTouchUpOneTwoThreeKey()
+    ///키보드 타입 전환 키 입력 시 수행할 동작 정의
+    func didTouchUpKeyboardChangeKey()
     ///커서 이전의 문자 가져오기
     func characterBeforeCursor() -> String?
 }
